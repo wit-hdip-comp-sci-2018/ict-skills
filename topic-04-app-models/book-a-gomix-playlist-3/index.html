@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
-<body class="uk-background-muted">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-
-  <style>
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
 body
 {
@@ -93,44 +89,46 @@ body
 
 
 
-  </style>
+    </style>
+  </head>
 
-  <div uk-sticky>
-    <nav class="uk-navbar-container" uk-navbar>
-      <div class="uk-subnav-left">
-        <ul class="uk-background-secondary uk-subnav-pill uk-subnav-divider">
-          <li class="uk-active"><a href="../index.html">4: Model View Controller </a></li>
-        </ul>
-      </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
-          
-            <li><a href="#">Lab-5 Playlist 3</a></li>
-          
-            <li><a href="#">Exercise Solutions</a></li>
-          
-            <li><a href="#">01</a></li>
-          
-            <li><a href="#">02</a></li>
-          
-            <li><a href="#">03</a></li>
-          
-            <li><a href="#">04</a></li>
-          
-            <li><a href="#">Exercises</a></li>
-          
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="uk-container uk-container-expand">
-    <ul class="uk-switcher switcher-container">
-      
-        <li> <h1>Objectives</h1>
+  <body>
+    <div uk-sticky>
+      <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-subnav-left">
+          <ul class="uk-background-secondary uk-subnav-pill uk-subnav-divider">
+            <li class="uk-active"><a href="../index.html">4: Model View Controller </a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
+            
+              <li><a href="#">Lab-5 Playlist 3</a></li>
+            
+              <li><a href="#">Exercise Solutions</a></li>
+            
+              <li><a href="#">01</a></li>
+            
+              <li><a href="#">02</a></li>
+            
+              <li><a href="#">03</a></li>
+            
+              <li><a href="#">04</a></li>
+            
+              <li><a href="#">Exercises</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="uk-container uk-container-expand">
+      <ul class="uk-switcher switcher-container">
+        
+          <li> <h1>Objectives</h1>
 <p>Enable Songs and Playlists to be added via simple forms.</p>
 </li>
-      
-        <li> <h1>Exercise Solutions</h1>
+        
+          <li> <h1>Exercise Solutions</h1>
 <p>This lab requires that the <code>playlist-2</code> lab be completed. If you have lost your solution, create a new project in Gomix and select the <code>import from github</code> option and enter <code>wit-hdip-comp-sci-2018/playlist-2</code> to import a completed version.</p>
 <h2>Exercise 1: UX Enhancements &amp; Exercise 3: listplaylists partial</h2>
 <p>Introduce a &#39;Delete Playlist&#39; button for each playlist, represented by a <code>trash</code> icon.</p>
@@ -175,8 +173,8 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
     _.remove(this.playlistCollection, { id: id });
   },</code></pre>
 </li>
-      
-        <li> <h1>Adding a Song</h1>
+        
+          <li> <h1>Adding a Song</h1>
 <p>Before adding a song, lets align the delete button appearance with the delete playlist. Use this icon button instead of the existing one:</p>
 <pre><code class="lang-html">&lt;a href=&quot;/playlist/{{../playlist.id}}/deletesong/{{id}}&quot; class=&quot;ui icon button&quot;&gt;
   &lt;i class=&quot;icon trash&quot;&gt;&lt;/i&gt;
@@ -235,8 +233,8 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
 <p>Try this now and verify that you can add songs.</p>
 <p>Can you delete one of the songs you have just added? Can you delete one of the songs that have been in there already? Can you explain what is going wrong?</p>
 </li>
-      
-        <li> <h1>ID Management</h1>
+        
+          <li> <h1>ID Management</h1>
 <p>Deleting a song you have manually added using the form generates the following:</p>
 <pre><code>Cannot GET /playlist/02/deletesong/</code></pre>
 <p>However, pre-populated songs can still be deleted. What is going on here?</p>
@@ -283,8 +281,8 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
     logger.debug(&#39;New Song = &#39;, newSong);
 ...</code></pre>
 </li>
-      
-        <li> <h1>Adding playlists</h1>
+        
+          <li> <h1>Adding playlists</h1>
 <p>Modeled on the Song addition, we can quickly implement the necessary form, route, controller function and model update to support adding a new playlist.</p>
 <h2>views/partials/addplaylist.hbs</h2>
 <pre><code class="lang-html">&lt;form class=&quot;ui stacked segment form&quot; action=&quot;/dashboard/addplaylist&quot; method=&quot;POST&quot;&gt;
@@ -322,8 +320,8 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
 },</code></pre>
 <p>We should now be able to add new playlists.</p>
 </li>
-      
-        <li> <h1>Persistence</h1>
+        
+          <li> <h1>Persistence</h1>
 <p>You will note that, even though we are able to add/delete playlists/songs, every time the app restarts then we are left with the same initial playlist. i.e. none of the changes we make are <code>persisted</code> beyond the life of the program execution.</p>
 <p>This is the field of databases - and beyond the scope of this course for the moment. However, we can implement something like a database, but simpler, which can serve our needs. Introduce this new class into the project:</p>
 <h2>models/json-store.js</h2>
@@ -435,8 +433,8 @@ module.exports = playlistStore;</code></pre>
 <p>Try this now - and keep an eye on the <code>playlist-store.json</code> file. Because of the way Glitch works, you may only see the updated json when you refresh the page. </p>
 <p>To see this in action - add a new Playlist in the UX. In Glitch, see if there is any change for playlist-store.json. If there is not, reload the Glitch site, and we should expect to see the new playlist in the reloaded json file.</p>
 </li>
-      
-        <li> <h1>Exercises</h1>
+        
+          <li> <h1>Exercises</h1>
 <p>If you want to download a complete version of the app as it should be at the end of this lab, then create a new Glitch project, and import <code>wit-hdip-comp-sci-2018/playlist-3</code>.</p>
 <h2>Exercise 1: Display Durations</h2>
 <p>Make sure the duration of each song and playlist is visible on the UX</p>
@@ -473,9 +471,63 @@ module.exports = playlistStore;</code></pre>
     this.store.save();
   },</code></pre>
 </li>
-      
-    </ul>
-  </div>
+        
+      </ul>
+    </div>
+    <script>
+      $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
 
-</body>
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
 </html>

@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
-<body class="uk-background-muted">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-
-  <style>
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
 body
 {
@@ -93,42 +89,44 @@ body
 
 
 
-  </style>
+    </style>
+  </head>
 
-  <div uk-sticky>
-    <nav class="uk-navbar-container" uk-navbar>
-      <div class="uk-subnav-left">
-        <ul class="uk-background-secondary uk-subnav-pill uk-subnav-divider">
-          <li class="uk-active"><a href="../index.html">1: Introduction to Glitch </a></li>
-        </ul>
-      </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
-          
-            <li><a href="#">Lab-1 Glitch Intro</a></li>
-          
-            <li><a href="#">01</a></li>
-          
-            <li><a href="#">02</a></li>
-          
-            <li><a href="#">03</a></li>
-          
-            <li><a href="#">04</a></li>
-          
-            <li><a href="#">Exercises</a></li>
-          
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="uk-container uk-container-expand">
-    <ul class="uk-switcher switcher-container">
-      
-        <li> <h1>Objectives</h1>
+  <body>
+    <div uk-sticky>
+      <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-subnav-left">
+          <ul class="uk-background-secondary uk-subnav-pill uk-subnav-divider">
+            <li class="uk-active"><a href="../index.html">1: Introduction to Glitch </a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
+            
+              <li><a href="#">Lab-1 Glitch Intro</a></li>
+            
+              <li><a href="#">01</a></li>
+            
+              <li><a href="#">02</a></li>
+            
+              <li><a href="#">03</a></li>
+            
+              <li><a href="#">04</a></li>
+            
+              <li><a href="#">Exercises</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="uk-container uk-container-expand">
+      <ul class="uk-switcher switcher-container">
+        
+          <li> <h1>Objectives</h1>
 <p>Create, modify and view your first Gomix project.</p>
 </li>
-      
-        <li> <h1>Gomix Setup</h1>
+        
+          <li> <h1>Gomix Setup</h1>
 <p>If you do not have a github account, create one now:</p>
 <ul>
 <li><a href="https://github.com">https://github.com</a></li>
@@ -149,8 +147,8 @@ body
 <p>Do this now with someone also doing the lab - perhaps you can pair up with someone via the slack channel?</p>
 <p>Verify that you each see different lists depending on what has been entered. Enter some &#39;dreams&#39; into you someone else&#39;s app.</p>
 </li>
-      
-        <li> <h1>Project Structure and Editing</h1>
+        
+          <li> <h1>Project Structure and Editing</h1>
 <p>Back in the <code>source</code> view, look at the project structure in more detail. Click on the <code>Markdown</code> button on the top - this will switch to edit mode:</p>
 <p><img src="img/03.png" alt=""></p>
 <p>You can edit this file now - it is documentation on your new app. Toggle the markdown button to switch back to preview mode.</p>
@@ -188,8 +186,8 @@ var dreams = [
 <p><img src="img/07.png" alt=""></p>
 <p>Experiment with making small changes in <code>server.js</code> now and keep an eye on the logs. Also, notice that if the changes you make are not correct syntax, this should be highlighted in the editor.</p>
 </li>
-      
-        <li> <h1>Configuring the Project</h1>
+        
+          <li> <h1>Configuring the Project</h1>
 <p>The project name can be changed by directly entering a new name on the sidebar:</p>
 <p><img src="img/08.png" alt=""></p>
 <p>This will also change the project url, so if you have shared the app you will have to re-share the new url.</p>
@@ -201,8 +199,8 @@ var dreams = [
 <p>Experiment with of all of these options.</p>
 <p>For <code>Export to github</code>, the repository must already exist in your account. The project will, however, be on a different branch from master, so might not be visible at first unless you switch branches.</p>
 </li>
-      
-        <li> <h1>Run Offline</h1>
+        
+          <li> <h1>Run Offline</h1>
 <p>On your workstation, install Node.js:</p>
 <ul>
 <li><a href="https://nodejs.org">https://nodejs.org</a> </li>
@@ -232,8 +230,8 @@ Your app is listening on port 4000</code></pre>
 <p>If you open a browser now on <a href="http://localhost:4000">http://localhost:4000</a> your application should be running locally:</p>
 <p><img src="img/13.png" alt=""></p>
 </li>
-      
-        <li> <h1>Exercises</h1>
+        
+          <li> <h1>Exercises</h1>
 <h2>Exercise 1: Semantic UI</h2>
 <p>Modify index.html to include the latest semantic ui libraries:</p>
 <h3>Step 1:</h3>
@@ -257,9 +255,63 @@ Your app is listening on port 4000</code></pre>
 <h2>Exercise 3:</h2>
 <p>If you completed the above tasks, download the the app again and run it locally (see step 4).</p>
 </li>
-      
-    </ul>
-  </div>
+        
+      </ul>
+    </div>
+    <script>
+      $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
 
-</body>
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
 </html>

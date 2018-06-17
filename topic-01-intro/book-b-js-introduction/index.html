@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
-<body class="uk-background-muted">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-
-  <style>
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
 body
 {
@@ -93,46 +89,48 @@ body
 
 
 
-  </style>
+    </style>
+  </head>
 
-  <div uk-sticky>
-    <nav class="uk-navbar-container" uk-navbar>
-      <div class="uk-subnav-left">
-        <ul class="uk-background-secondary uk-subnav-pill uk-subnav-divider">
-          <li class="uk-active"><a href="../index.html">1: Introduction to Glitch </a></li>
-        </ul>
-      </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
-          
-            <li><a href="#">Lab-2 JS Intro</a></li>
-          
-            <li><a href="#">01</a></li>
-          
-            <li><a href="#">02</a></li>
-          
-            <li><a href="#">03</a></li>
-          
-            <li><a href="#">04</a></li>
-          
-            <li><a href="#">05</a></li>
-          
-            <li><a href="#">06</a></li>
-          
-            <li><a href="#">07</a></li>
-          
-            <li><a href="#">Exercises</a></li>
-          
-            <li><a href="#">.</a></li>
-          
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="uk-container uk-container-expand">
-    <ul class="uk-switcher switcher-container">
-      
-        <li> <h1>Objectives</h1>
+  <body>
+    <div uk-sticky>
+      <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-subnav-left">
+          <ul class="uk-background-secondary uk-subnav-pill uk-subnav-divider">
+            <li class="uk-active"><a href="../index.html">1: Introduction to Glitch </a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
+            
+              <li><a href="#">Lab-2 JS Intro</a></li>
+            
+              <li><a href="#">01</a></li>
+            
+              <li><a href="#">02</a></li>
+            
+              <li><a href="#">03</a></li>
+            
+              <li><a href="#">04</a></li>
+            
+              <li><a href="#">05</a></li>
+            
+              <li><a href="#">06</a></li>
+            
+              <li><a href="#">07</a></li>
+            
+              <li><a href="#">Exercises</a></li>
+            
+              <li><a href="#">.</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="uk-container uk-container-expand">
+      <ul class="uk-switcher switcher-container">
+        
+          <li> <h1>Objectives</h1>
 <p>Background &amp; Tools, Variables &amp; Boolean Logic</p>
 <h2>Background &amp; Tools</h2>
 <ul>
@@ -164,8 +162,8 @@ body
 <li>Compose a simple method inside an object.</li>
 </ul>
 </li>
-      
-        <li> <h1>Running Javascript</h1>
+        
+          <li> <h1>Running Javascript</h1>
 <h2>Option 1: Chrome Developer Console</h2>
 <p>For some of the short JavaScript examples, we will be using the Chrome console. To open up the console press <code>Control + Shift + J</code> on Windows and Linux (on a Mac <code>Option + Command + j</code>) . Another way to get to the console is to right click on the web page, select Inspect, and then move to the tab called <code>Console</code>.</p>
 <p>Inside of this console you can write JavaScript! So let&#39;s start by alerting a message. In the Chrome Console, type the following:</p>
@@ -196,8 +194,8 @@ body
 <h1>Exercises</h1>
 <h2>Exercise 1. Create the html and javascript files shown in this step.</h2>
 </li>
-      
-        <li> <h1>Variables</h1>
+        
+          <li> <h1>Variables</h1>
 <h2>Fundamentals</h2>
 <p>What&#39;s a variable, and why would you ever want to use one? The word &quot;variable&quot; may be most familiar to you mathematics classes, when you often use letters like <em>x</em> or <em>y</em> to represent numbers.</p>
 <p>This idea also exists in programming languages. Using variables lets us write code that&#39;s easier to read and also easier to change. It&#39;s unlikely you&#39;ll ever write a significant amount of JavaScript code without using variables, so it&#39;s good to get used to them early.</p>
@@ -250,8 +248,8 @@ this is the ending. */</code></pre>
 </ul>
 <p>Log these to the console.</p>
 </li>
-      
-        <li> <h1>Primitive Data Types</h1>
+        
+          <li> <h1>Primitive Data Types</h1>
 <p>Most of the variables so far stored <em>strings</em>. But JavaScript can work with other types of data as well. Let&#39;s take a look at the primitive data types.</p>
 <p>JavaScript has 6 primitive data types, but we&#39;ll only talk about 5 of them. Here&#39;s what they look like:</p>
 <ul>
@@ -344,8 +342,8 @@ parseFloat(&quot;w2.3alkweflakwe&quot;); // NaN (not a number)</code></pre>
 <p>Log these values to the console along with a friendly message.</p>
 <p>Load <code>first.html</code> in chrome and keep an eye on the console to see that the message is being displayed.</p>
 </li>
-      
-        <li> <h1>Boolean Logic</h1>
+        
+          <li> <h1>Boolean Logic</h1>
 <h3>Boolean Logic</h3>
 <p>An essential part of writing programs is being able to execute code that depends on certain conditions. There are many different examples when you&#39;d want to conditionally execute code. Here are just a few:</p>
 <ul>
@@ -513,8 +511,8 @@ if (isLearning) {
 </ol>
 <p>Test the fragment in the chrome developer console.</p>
 </li>
-      
-        <li> <h1>Const, Let &amp; Simple Objects</h1>
+        
+          <li> <h1>Const, Let &amp; Simple Objects</h1>
 <h2>Const &amp; Let</h2>
 <p>The variable statement declares a variable, optionally initializing it to a value.</p>
 <h3>var</h3>
@@ -597,8 +595,8 @@ console.log (&#39;homer = &#39; + homer);</code></pre>
 <h2>Exercise 2: Lisa</h2>
 <p>Create an object called <code>lisa</code>, with Lisa&#39;s details (say her age is 12). In addition, store her favourite musical instrument. Log the object to the console.</p>
 </li>
-      
-        <li> <h1>Objects with Functions</h1>
+        
+          <li> <h1>Objects with Functions</h1>
 <p>Try this object in the console:</p>
 <pre><code>const marge = {
   firstName: &#39;marge&#39;,
@@ -641,8 +639,8 @@ ned.speak();</code></pre>
 <h2>Exercise 1: Objects with Functions</h2>
 <p>Create another Simpsons character of your choice. Include a hello() function, and have the function say something relevant to the character. Also include a goodby() function which says something else. Once you have created the objects, call them functions a few times.</p>
 </li>
-      
-        <li> <h1>Chrome Debugger</h1>
+        
+          <li> <h1>Chrome Debugger</h1>
 <p>Use this copy of the <code>simpsons.js</code> file (copy/paste in, replacing your content:</p>
 <h2>simpsons.js</h2>
 <pre><code>const homer = {
@@ -704,8 +702,8 @@ ned.speak();</code></pre>
 <p>These are called <code>breakpoints</code>, and they allow you to stop the program at the point indicated. You can remove a breakpoint by double clicking in the margin. </p>
 <p>Try to understand what happens when you press the reload button on the browser. Also, explore the right hand pane in the developer tools console</p>
 </li>
-      
-        <li> <h1>Exercises</h1>
+        
+          <li> <h1>Exercises</h1>
 <h2>Exercise 1:</h2>
 <p>Using the <code>simpsons.html</code> and <code>simpsons.js</code> files from the last step as a guide, create a new pair of files called <code>exercise-01.html</code> and <code>exercise-01.js</code>. Make sure exercise-01.html loads exercise-01.js.</p>
 <p>In exercise-01.js, write a function that reads a firstname, lastname and age using the <code>prompt</code> function, create and object called <code>user</code> that contains these values, and then logs that object to the console.</p>
@@ -757,8 +755,8 @@ if(firstVariable){
 </ol>
 <p>Run the script - in the console or in first.js - to see if your answers are correct.</p>
 </li>
-      
-        <li> <h1>Exercise 1:</h1>
+        
+          <li> <h1>Exercise 1:</h1>
 <pre><code>const usersFirstName = prompt(&#39;enter first name&#39;);
 const usersLastName = prompt(&#39;enter first name&#39;);
 const usersAge = prompt(&#39;enter first name&#39;);
@@ -792,9 +790,63 @@ user.sayHello();</code></pre>
 <h1>Exercise 3:</h1>
 <pre><code>Have a go yourself!</code></pre>
 </li>
-      
-    </ul>
-  </div>
+        
+      </ul>
+    </div>
+    <script>
+      $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
 
-</body>
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
 </html>
