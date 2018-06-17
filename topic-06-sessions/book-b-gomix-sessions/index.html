@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <style>
-      
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="uk-background-muted">
+
+
+  <style>
+    
+    
 
 body
 {
@@ -89,133 +93,54 @@ body
 
 
 
-    </style>
-  </head>
+  </style>
 
-  <body>
-    
-    
-
-    <div class="ui fixed top pointing inverted stackable menu labmenu">
-      <header class="header item">
-        <i id="toc" class="sitemap icon"></i>
-        <a href="../index.html">
-          6: Sessions 
-        </a>
-      </header>
-      <div class="right tab-menu menu">
-        
-          <a class="item" data-tab="Lab-7 Playlist 4">
-            Lab-7 Playlist 4
-          </a>
-        
-          <a class="item" data-tab="Lab-7 Sessions">
-            Lab-7 Sessions
-          </a>
-        
-          <a class="item" data-tab="Exercise Solutions">
-            Exercise Solutions
-          </a>
-        
-          <a class="item" data-tab="02">
-            02
-          </a>
-        
-          <a class="item" data-tab="03">
-            03
-          </a>
-        
-          <a class="item" data-tab="04">
-            04
-          </a>
-        
-          <a class="item" data-tab="05">
-            05
-          </a>
-        
-          <a class="item" data-tab="06">
-            06
-          </a>
-        
-          <a class="item" data-tab="07">
-            07
-          </a>
-        
-          <a class="item" data-tab="Exercises">
-            Exercises
-          </a>
-        
-        <div class="item">
-          
-        </div>
+  <div uk-sticky>
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-subnav-left">
+        <ul class="uk-background-secondary uk-subnav-pill uk-subnav-divider">
+          <li class="uk-active"><a href="../index.html">6: Sessions </a></li>
+        </ul>
       </div>
-    </div>
-
-    <div class="ui segment pushable">
-      <div class="ui inverted labeled icon left inline vertical sidebar menu">
-        <br><br>
-        
+      <div class="uk-navbar-right">
+        <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
           
-            <a class="item" href="../../topic-01-intro/book-a-glitch-intro/index.html">
-              Lab-1 Glitch Intro
-            </a>
+            <li><a href="#">Lab-7 Playlist 4</a></li>
           
-        
+            <li><a href="#">Lab-7 Sessions</a></li>
           
-            <a class="item" href="../../topic-01-intro/book-b-js-introduction/index.html">
-              Lab-2 JS Intro
-            </a>
+            <li><a href="#">Exercise Solutions</a></li>
           
-        
+            <li><a href="#">02</a></li>
           
-            <a class="item" href="../../topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">
-              Lab-3 Playlist 1
-            </a>
+            <li><a href="#">03</a></li>
           
-        
+            <li><a href="#">04</a></li>
           
-            <a class="item" href="../../topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">
-              Lab-4 Playlist 2
-            </a>
+            <li><a href="#">05</a></li>
           
-        
+            <li><a href="#">06</a></li>
           
-            <a class="item" href="../../topic-04-app-models/book-a-gomix-playlist-3/index.html">
-              Lab-5 Playlist 3
-            </a>
+            <li><a href="#">07</a></li>
           
-        
+            <li><a href="#">Exercises</a></li>
           
-            <a class="item" href="../../topic-05-arrays/book-a-js-arrays/index.html">
-              Lab-6 JS Arrays
-            </a>
-          
-        
-          
-            <a class="active item" href="../../topic-06-sessions/book-b-gomix-sessions/index.html">
-              Lab-7 Playlist 4
-            </a>
-          
-        
+        </ul>
       </div>
-      <div class="pusher" tabindex="-1">
-        <div class="ui basic segment" id="labchat">
-          <br>
-          
-            <div  class="ui tab segment lab" data-tab="Lab-7 Playlist 4">
-              <h1>Objectives</h1>
+    </nav>
+  </div>
+  <div class="uk-container uk-container-expand">
+    <ul class="uk-switcher switcher-container">
+      
+        <li> <h1>Objectives</h1>
 <p>Introduce Sessions onto the Playlist application, enabling user accounts and cookie-based authentication.</p>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="Lab-7 Sessions">
-              <h1>Objectives</h1>
+</li>
+      
+        <li> <h1>Objectives</h1>
 <p>Introduce Sessions onto the Playlist application, enabling user accounts and cookie-based authentication.</p>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="Exercise Solutions">
-              <h1>Exercises Solutions</h1>
+</li>
+      
+        <li> <h1>Exercises Solutions</h1>
 <p>This lab requires that the <code>playlist-3</code> lab be completed. If you have lost your solution, create a new project in Gomix and select the <code>import from github</code> option and enter <code>wit-hdip-comp-sci-2018/playlist-3</code> to import a completed version.</p>
 <h2>Exercise 1: Display Durations</h2>
 <p>Make sure the duration of each song and playlist is visible on the UX</p>
@@ -294,11 +219,9 @@ body
     this.store.save();
   },
 ...</code></pre>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="02">
-              <h1>Playlist Model</h1>
+</li>
+      
+        <li> <h1>Playlist Model</h1>
 <p>This lab is based on Playlist-3. This can be imported into a new gomix project from <code>/wit-ict-summer-school-2017/playlist-3</code>.</p>
 <h2>models/playlist-store.js</h2>
 <p>If your project has any playlists in the json store, delete them now. Your store should look like this:</p>
@@ -315,11 +238,9 @@ body
   },
 ...</code></pre>
 <p>This new methods takes a userid, and will only fetch playlists belonging to the user with the specific id. We havent introduced the User model yet - nor are we storing playlists with such an id. We will make these changes in this lab.</p>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="03">
-              <h1>UserStore</h1>
+</li>
+      
+        <li> <h1>UserStore</h1>
 <p>Now we can introduce a new model:</p>
 <h2>models/user-store.js</h2>
 <pre><code>&#39;use strict&#39;;
@@ -372,11 +293,9 @@ us</p>
   ]
 }</code></pre>
 <p>In the above we are pre-loading two users for test purposes.</p>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="04">
-              <h1>Accounts views</h1>
+</li>
+      
+        <li> <h1>Accounts views</h1>
 <p>We need a suite of new views to support signup / login</p>
 <h2>views/index.hbs</h2>
 <pre><code>{{&gt; welcomemenu }}
@@ -449,11 +368,9 @@ us</p>
 &lt;script&gt;
   $(&quot;#{{id}}&quot;).addClass(&quot;active item&quot;);
 &lt;/script&gt;</code></pre>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="05">
-              <p>accounts.# Accounts controller</p>
+</li>
+      
+        <li> <p>accounts.# Accounts controller</p>
 <p>This is a new controller to support these views:</p>
 <h2>controllers/accounts</h2>
 <pre><code>&#39;use strict&#39;;
@@ -516,11 +433,9 @@ const accounts = {
 };
 
 module.exports = accounts;</code></pre>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="06">
-              <h1>Routes</h1>
+</li>
+      
+        <li> <h1>Routes</h1>
 <p>These new views+ controller  all require new routes:</p>
 <h2>routes.js</h2>
 <p>In particular, these specific routes:</p>
@@ -571,11 +486,9 @@ module.exports = router;</code></pre>
 <p><img src="img/01.png" alt=""></p>
 <h3>login</h3>
 <p><img src="img/03.png" alt=""></p>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="07">
-              <h1>Dashboard</h1>
+</li>
+      
+        <li> <h1>Dashboard</h1>
 <p>Try the following now:</p>
 <ul>
 <li>Log in as &#39;homer@simpson&#39;, &#39;secret&#39;. </li>
@@ -672,11 +585,9 @@ const accounts = require (&#39;./accounts.js&#39;);
     }
   ]
 }</code></pre>
-
-            </div>
-          
-            <div  class="ui tab segment lab" data-tab="Exercises">
-              <h1>Exercise</h1>
+</li>
+      
+        <li> <h1>Exercise</h1>
 <p>This is the completed archive at this stage:</p>
 <ul>
 <li><a href="https://github.com/wit-ict-summer-school-2017/playlist-4">https://github.com/wit-ict-summer-school-2017/playlist-4</a></li>
@@ -699,67 +610,10 @@ const accounts = require (&#39;./accounts.js&#39;);
 <p>Can you see anything not quite right about it? </p>
 <p>Hint: what happens if incorrect password entered? Try this now.</p>
 <p>See if you can fix this problem - i.e. only allow user to log in if they provide correct password.</p>
+</li>
+      
+    </ul>
+  </div>
 
-            </div>
-          
-        </div>
-      </div>
-    </div>
-
-    <script>
-      $(document).on('keydown', function(e) {
-  e = e || window.event;
-  var nextTab;
-  switch (e.which || e.keyCode) {
-    case 37: // left
-      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
-      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
-      nextTab.click();
-      $('.pusher').focus();
-      break;
-
-    case 39: // right
-      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
-      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
-      nextTab.click();
-      $('.pusher').focus();
-      break;
-  }
-});
-
-      $(document).ready(function() {
-  $('img').addClass('ui image');
-
-  $('.ui.embed').embed();
-
-  const $images = $('.lab img');
-  jQuery.each($images, function(i) {
-    if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass(
-        'ui basic segment',
-      );
-      $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass(
-        'ui blue ribbon label',
-      );
-      divLabel.append($images[i].alt);
-      $(divLabel).insertBefore($images[i]);
-    }
-  });
-
-  $('.ui.menu .item').tab({
-    history: true,
-    historyType: 'hash',
-  });
-
-  $('.popup').popup();
-
-  $('.ui.sidebar')
-    .sidebar({ context: $('.pushable') })
-    .sidebar('setting', 'transition', 'slide out')
-    .sidebar('attach events', '#toc');
-});
-
-    </script>
-  </body>
+</body>
 </html>
