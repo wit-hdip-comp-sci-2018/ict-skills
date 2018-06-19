@@ -1,32 +1,32 @@
+
+
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
-<body class="uk-background-muted">
-
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
   <style>
     
 
 body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
   font-size:90%;
+  color: black;
 }
 
 p {
-  margin: 0.5em
+  margin: 0.5em;
 }
 
 pre code {
@@ -60,14 +60,118 @@ h3 {
 
 
   </style>
+<body>
+
+  
+  <div class="uk-offcanvas-content">
+    <div id="offcanvas-usage" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav">
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-a-glitch-intro/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-1 Glitch Intro
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-b-js-introduction/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-2 JS Intro
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-3 Playlist 1
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-4 Playlist 2
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-04-app-models/book-a-gomix-playlist-3/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-5 Playlist 3
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="/topic-05-arrays/book-a-js-arrays/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-6 JS Arrays
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="/topic-06-sessions/book-b-gomix-sessions/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-7 Playlist 4
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
 
   <div uk-sticky>
-    <nav class="uk-navbar-container" uk-navbar>
-      <div class="uk-subnav-left">
-        <ul class="uk-background-secondary uk-subnav-pill uk-subnav-divider">
+    <nav uk-navbar>
+      
+        
+          
+        
+      
+      <div class="uk-navbar-left">
+        <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
+          <li><a href="#offcanvas-usage" uk-icon="icon: menu", uk-toggle title="Switch Lab" pos="bottom" uk-tooltip></a></li>
           <li class="uk-active"><a href="../index.html">3: Templates & Routes </a></li>
         </ul>
       </div>
+
+
       <div class="uk-navbar-right">
         <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
           
@@ -575,6 +679,4 @@ module.exports = playlist;</code></pre>
       
     </ul>
   </div>
-
 </body>
-</html>
