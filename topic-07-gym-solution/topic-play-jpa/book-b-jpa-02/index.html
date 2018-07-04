@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <style>
+    
+
+body {
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
+}
+
+p {
+  margin: 0.5em;
+}
+
+pre code {
+  font-family: "Monaco";
+  font-size: 100%;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-style:italic;
+  font-size:130%;
+}
+
+h2 {
+  font-size:110%;
+}
+
+h3 {
+  font-size:100%;
+}
+
+
+
+  </style>
+<body>
+
+  
+  <div class="uk-offcanvas-content">
+    <div id="offcanvas-usage" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav">
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-a-glitch-intro/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-1 Glitch Intro
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-b-js-introduction/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-2 JS Intro
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-3 Playlist 1
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-4 Playlist 2
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-04-app-models/book-a-gomix-playlist-3/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-5 Playlist 3
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-05-arrays/book-a-js-arrays/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-6 JS Arrays
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-06-sessions/book-b-gomix-sessions/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-7 Playlist 4
+                </a>
+              </li>
+            
+          
+            
+          
+            
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div uk-sticky>
+    <nav uk-navbar>
+      <div class="uk-navbar-left">
+        <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
+          <li><a href="#offcanvas-usage" uk-icon="icon: menu", uk-toggle title="Switch Lab" pos="bottom" uk-tooltip></a></li>
+          <li class="uk-active"><a href="../index.html">JPA: Model Relationships in Play </a></li>
+        </ul>
+      </div>
+
+
+      <div class="uk-navbar-right">
+        <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
+          
+            <li><a href="#">JPA-02</a></li>
+          
+            <li><a href="#">01</a></li>
+          
+            <li><a href="#">02</a></li>
+          
+            <li><a href="#">03</a></li>
+          
+            <li><a href="#">04</a></li>
+          
+            <li><a href="#">05</a></li>
+          
+            <li><a href="#">06</a></li>
+          
+            <li><a href="#">Exercises</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="uk-container uk-container-expand">
+    <ul class="uk-switcher switcher-container">
+      
+        <li> <h1>Objectives</h1>
+<p>Explore the model developed in the last lab a little further by attaching a Semantic UI. Experiment with UI elements that change the model.</p>
+</li>
+      
+        <li> <h1>Semantic UI</h1>
+<p>We wish to incorporate the latest version of the semantic ui css framework into your application, and restyle all of the views to take advantage of the framework.</p>
+<ul>
+<li><a href="http://semantic-ui.com/">http://semantic-ui.com/</a></li>
+</ul>
+<p>This simplest way if incorporating it is to link to it on a CDN (Content Delivery Network).</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;#{get &#39;title&#39; /}&lt;/title&gt;
+    &lt;meta charset=&quot;${_response_encoding}&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot;href=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css&quot;type=&quot;text/css&quot;&gt;
+     &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+     &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js&quot;&gt;&lt;/script&gt;    
+    &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;@{&#39;/public/stylesheets/main.css&#39;}&quot;&gt;
+    #{get &#39;moreStyles&#39; /}
+    &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;@{&#39;/public/images/favicon.png&#39;}&quot;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    #{doLayout /}
+
+  #{get &#39;moreScripts&#39; /}
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>To test out the UI, simply give each <code>&lt;nav&gt;</code> element this class <code>class=&quot;ui menu&quot;</code> :</p>
+<pre><code class="lang-html">&lt;nav class=&quot;ui menu&quot;&gt;</code></pre>
+<p>You should see a minimally styled menu on all screens.</p>
+<p>Now make each section have the following class:</p>
+<pre><code class="lang-html">&lt;section class=&quot;ui raised segment&quot;&gt;</code></pre>
+<p>A light border should appear around each view.</p>
+<p>Now style all of the tables:</p>
+<pre><code class="lang-html">&lt;table class=&quot;ui table&quot;&gt;</code></pre>
+<p>Finally, adjust the link on <code>views/players/index.html</code> to look more like a button via the  class <code>ui mini teal button</code></p>
+<pre><code class="lang-html">&lt;td&gt; &lt;a class=&quot;ui mini teal button&quot; href=&quot;/players/delete/${player.id}&quot;&gt;Delete&lt;/a&gt; &lt;/td&gt;</code></pre>
+<p>An alternative might be to use an icon button:</p>
+<pre><code class="lang-html">&lt;td&gt; 
+  &lt;a class=&quot;ui ui icon button&quot; href=&quot;/players/delete/${player.id}&quot;&gt;
+    &lt;i class=&quot;delete red icon&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt; 
+&lt;/td&gt;</code></pre>
+<p>Try out these styles now.</p>
+</li>
+      
+        <li> <h1>Delete Club</h1>
+<p>First introduce the delete button in the clubs view:</p>
+<pre><code class="lang-html">          &lt;td&gt; 
+            &lt;a class=&quot;ui ui icon button&quot; href=&quot;/clubs/delete/${club.id}&quot;&gt;
+             &lt;i class=&quot;delete red icon&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt; 
+          &lt;/td&gt;</code></pre>
+<p>We need a supporting route:</p>
+<pre><code>GET    /clubs/delete/{id}                       Clubs.delete</code></pre>
+<p>... and this method in the Clubs controller:</p>
+<pre><code class="lang-java">  public static void delete(Long id)
+  {
+    Club club = Club.findById(id);
+    if (club != null)
+    {
+      Logger.info(&quot;Trying to delete &quot; + club.name);
+      List&lt;Division&gt; divisions = Division.findAll();
+      for (Division division : divisions)
+      {
+        if (division.members.contains(club))
+        {
+          division.members.remove(club);
+          division.save();
+          Logger.info (&quot;removing club from division&quot;);
+        }
+      }
+      club.delete();
+    }
+    index();
+  }</code></pre>
+<p>Try deleting clubs now.</p>
+</li>
+      
+        <li> <h1>Delete Divisions</h1>
+<h2>New routes:</h2>
+<pre><code>GET    /divisions/delete/{id}                   Divisions.delete</code></pre>
+<h2>views/Divisions/index.html</h2>
+<pre><code class="lang-html">          &lt;td&gt; 
+            &lt;a class=&quot;ui ui icon button&quot; href=&quot;/divisions/delete/${division.id}&quot;&gt;
+             &lt;i class=&quot;delete red icon&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt; 
+          &lt;/td&gt;</code></pre>
+<h2>controllers/Divisions.java</h2>
+<pre><code class="lang-java">  public static void delete(Long id)
+  {
+    Division division = Division.findById(id);
+    division.delete();
+    index();
+  }</code></pre>
+<p>When you delete a division, pay close attention to the clubs and players tables. </p>
+<p>Can you explain what is happening?</p>
+</li>
+      
+        <li> <h1>Show Sponsors</h1>
+<p>Currently the Spnosor table is incomplete - it only lists the sponsor names, and not the club being sponsored:</p>
+<pre><code class="lang-html">  &lt;table class=&quot;ui table&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Sponsor&lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        #{list items:sponsors, as:&#39;sponsor&#39;}
+          &lt;tr&gt;
+            &lt;td&gt;${sponsor.name}&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+        #{/list}
+    &lt;/tbody&gt;
+  &lt;/table&gt;</code></pre>
+<p>We can fix this now:</p>
+<pre><code class="lang-html">  &lt;table class=&quot;ui table&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Sponsor&lt;/th&gt;
+        &lt;th&gt;Clubs&lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        #{list items:sponsors, as:&#39;sponsor&#39;}
+          &lt;tr&gt;
+            &lt;td&gt;${sponsor.name}&lt;/td&gt;
+          &lt;td&gt; 
+            &lt;table class &quot;ui table&quot;&gt;
+              &lt;tr&gt;
+               #{list items:sponsor.support, as:&#39;club&#39;}
+                 &lt;td&gt;${club.name}&lt;/td&gt; &lt;/tr&gt;
+               #{/list}
+               &lt;/tr&gt;
+             &lt;/table&gt;            
+          &lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+        #{/list}
+    &lt;/tbody&gt;
+  &lt;/table&gt;</code></pre>
+<p>Run the app now to see if this page renders as expected.</p>
+</li>
+      
+        <li> <h1>Delete Sponsors</h1>
+<h1>New route:</h1>
+<pre><code>GET    /sponsors/delete/{id}                    Sponsors.delete</code></pre>
+<h2>views/Sponsors/index.html</h2>
+<pre><code class="lang-html">          &lt;td&gt; 
+            &lt;a class=&quot;ui ui icon button&quot; href=&quot;/sponsors/delete/${sponsor.id}&quot;&gt;
+             &lt;i class=&quot;delete red icon&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt; 
+          &lt;/td&gt;</code></pre>
+<h2>controllers/Sponsors.java</h2>
+<pre><code>  public static void delete(Long id)
+  {
+    Sponsor sponsor = Sponsor.findById(id);
+
+    for (Club club  : sponsor.support)
+    {
+      club.sponsors.remove(sponsor);
+      club.save();
+    }
+
+    sponsor.delete();
+    index();
+  }</code></pre>
+<p>Look carefully at the delete method. Can you make sense of it?</p>
+</li>
+      
+        <li> <h1>New Player</h1>
+<p>We would like a way of adding a new player via the UI.</p>
+<p>First, bring in a new button on the player view to trigger the creating of a player:</p>
+<pre><code class="lang-html">  &lt;a class=&quot;ui blue button&quot; href=&quot;/players/addplayer&quot;&gt;
+    &lt;i class=&quot;user icon&quot;&gt;&lt;/i&gt; Add Player
+  &lt;/a&gt;</code></pre>
+<p>Then the routes:</p>
+<pre><code>GET    /players/addplayer                       Players.addPlayer
+POST   /players/newplayer                       Players.newPlayer</code></pre>
+<p>..and the method in Players to display the add player form:</p>
+<pre><code class="lang-java">  public static void addPlayer()
+  {
+    render();
+  }
+
+  public static void newPlayer(String name)
+  {
+    Player player = new Player (name);
+    player.save();
+    index();
+  }</code></pre>
+<p>We also need a form</p>
+<h2>views/Players/addplayer.html</h2>
+<pre><code class="lang-html">#{extends &#39;main.html&#39; /}
+#{set title:&#39;Player Details&#39; /}
+
+&lt;section class=&quot;ui raised form segment&quot;&gt;
+  &lt;form action=&quot;/players/newplayer&quot; method=&quot;POST&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label&gt; Player Name &lt;/label&gt;
+      &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;
+    &lt;/div&gt;  
+    &lt;button class=&quot;ui blue submit button&quot;&gt;Add&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/section&gt;</code></pre>
+<p>Try this out now. </p>
+<p>You will get an error - as you have added a player, however not associated the player with a club. The club is a &#39;null&#39; reference in the database, and causes the view to fail.</p>
+<p>We can fix this easily, permitting &#39;unattached&#39; players. Open <code>views/Players/index.html</code> and replace this line:</p>
+<pre><code class="lang-html">&lt;td&gt;  ${player.club.name} &lt;/td&gt;</code></pre>
+<p>with this:</p>
+<pre><code class="lang-html">&lt;td&gt;  ${player.club?.name} &lt;/td&gt;</code></pre>
+<p>There is a very small difference. This is using a <code>null-safe</code> operator <code>?</code> when trying to access the clubs name. If the club is null (i.e. there is no club), we will not attempt to reach into the name field.</p>
+<p>Make sure this works now as expected.</p>
+</li>
+      
+        <li> <h1>Exercises</h1>
+<p>Archive of project so far:</p>
+<ul>
+<li><a href="https://github.com/wit-ict-summer-school-2017/jpamodel">https://github.com/wit-ict-summer-school-2017/jpamodel</a></li>
+</ul>
+<h2>Exercise 1</h2>
+<p>On the clubs page, have the table display the sponsors.</p>
+<h2>Exercise 2</h2>
+<p>Following on from step 7, provide buttons/views to create Clubs, Divisions and Sponsors. You may need to use the <code>null safe</code> operator from step 7 to do this effectively.</p>
+<h2>Exercise 3</h2>
+<p>We still dont have a way of enabling the user to establish associations between the different models. E.g. have new player belong to a club, or clubs be in a division etc..</p>
+<p>How would you approach this?</p>
+</li>
+      
+    </ul>
+  </div>
+</body>

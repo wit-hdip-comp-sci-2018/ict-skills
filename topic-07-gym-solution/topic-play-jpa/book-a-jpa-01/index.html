@@ -1,0 +1,1262 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <style>
+    
+
+body {
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
+}
+
+p {
+  margin: 0.5em;
+}
+
+pre code {
+  font-family: "Monaco";
+  font-size: 100%;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-style:italic;
+  font-size:130%;
+}
+
+h2 {
+  font-size:110%;
+}
+
+h3 {
+  font-size:100%;
+}
+
+
+
+  </style>
+<body>
+
+  
+  <div class="uk-offcanvas-content">
+    <div id="offcanvas-usage" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav">
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-a-glitch-intro/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-1 Glitch Intro
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-b-js-introduction/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-2 JS Intro
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-3 Playlist 1
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-4 Playlist 2
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-04-app-models/book-a-gomix-playlist-3/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-5 Playlist 3
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-05-arrays/book-a-js-arrays/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-6 JS Arrays
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-06-sessions/book-b-gomix-sessions/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+Lab-7 Playlist 4
+                </a>
+              </li>
+            
+          
+            
+          
+            
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div uk-sticky>
+    <nav uk-navbar>
+      <div class="uk-navbar-left">
+        <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
+          <li><a href="#offcanvas-usage" uk-icon="icon: menu", uk-toggle title="Switch Lab" pos="bottom" uk-tooltip></a></li>
+          <li class="uk-active"><a href="../index.html">JPA: Model Relationships in Play </a></li>
+        </ul>
+      </div>
+
+
+      <div class="uk-navbar-right">
+        <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
+          
+            <li><a href="#">JPA-01</a></li>
+          
+            <li><a href="#">01</a></li>
+          
+            <li><a href="#">02</a></li>
+          
+            <li><a href="#">03</a></li>
+          
+            <li><a href="#">04</a></li>
+          
+            <li><a href="#">05</a></li>
+          
+            <li><a href="#">06</a></li>
+          
+            <li><a href="#">07</a></li>
+          
+            <li><a href="#">08</a></li>
+          
+            <li><a href="#">09</a></li>
+          
+            <li><a href="#">10</a></li>
+          
+            <li><a href="#">Solution</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="uk-container uk-container-expand">
+    <ul class="uk-switcher switcher-container">
+      
+        <li> <h1>Objectives</h1>
+<p>Build  new project to explore JPA relationships in more depth. in particular, define a model with OneToMany, MnyToOne and ManyToMany relations - and test each of the relationships via unit tests in order to ensure they are correctly implemented.</p>
+</li>
+      
+        <li> <h1>JPA Model Project</h1>
+<p>Create a brand new Play project. Do this by navigating to the correct folder folder (most likely your workspace) and running a command prompt. Then type:</p>
+<pre><code>play new jpamodel</code></pre>
+<p>Once this has completed, change into the folder just created (jpamodel) and run the eclipsify command:</p>
+<pre><code>cd jpamodel
+play eclipsify</code></pre>
+<p>You can now import the project into eclipse in the usual way.</p>
+<p>If you are using Idea, then the command is different:</p>
+<pre><code>cd jpamodel
+play idealize</code></pre>
+<p>Once imported, you may need to make sure the project is configured for an in-memory database - by verifying that <code>conf/application.conf</code> contains the following:</p>
+<pre><code>db.default=mem</code></pre>
+<h2>Initial Model for Player and Club</h2>
+<p>In your jpamodel eclipse project, create two new classes in the model package:</p>
+<h2>Club</h2>
+<pre><code class="lang-java">package models;
+
+import javax.persistence.Entity;
+import play.db.jpa.Model;
+
+@Entity
+public class Club extends Model
+{
+  public String name;
+
+  public Club(String name)
+  {
+    this.name = name;
+  }
+}</code></pre>
+<h2>Player</h2>
+<pre><code class="lang-java">package models;
+
+import javax.persistence.Entity;
+import play.db.jpa.Model;
+
+@Entity
+public class Player extends Model
+{
+  public String name;
+
+  public Player(String name)
+  {
+    this.name = name;
+  }
+}</code></pre>
+<p>Now we create the unit test harnesses. This is similiar to the Junit tests you have been running in Java project, except this time the unit tests are bound into the web an database application. </p>
+<p>To do this, in &#39;test/default package&#39; create these two classes:</p>
+<h2>ClubTest</h2>
+<pre><code class="lang-java">import org.junit.*;
+
+import java.util.*;
+import play.test.*;
+import models.*;
+
+public class ClubTest extends UnitTest 
+{
+  @Before
+  public void setup()
+  {
+  }
+
+  @After
+  public void teardown()
+  {
+  }
+
+  @Test
+  public void testCreate()
+  {
+
+  }
+}</code></pre>
+<h2>PlayerTest</h2>
+<pre><code class="lang-java">import org.junit.*;
+
+import java.util.*;
+import play.test.*;
+import models.*;
+
+public class PlayerTest extends UnitTest 
+{
+  @Before
+  public void setup()
+  {
+  }
+
+  @After
+  public void teardown()
+  {
+  }
+
+  @Test
+  public void testCreate()
+  {
+
+  }
+}</code></pre>
+<p>Run the app now in &#39;test&#39; mode:</p>
+<pre><code>play test</code></pre>
+<p>...and navigate to the test runner page:</p>
+<ul>
+<li><a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#104;&#x74;&#x74;&#x70;&#58;&#47;&#x2f;&#108;&#111;&#99;&#x61;&#108;&#x68;&#111;&#115;&#116;&#58;&#57;&#48;&#x30;&#x30;&#47;&#x40;&#116;&#x65;&#115;&#x74;&#115;">&#104;&#x74;&#x74;&#x70;&#58;&#47;&#x2f;&#108;&#111;&#99;&#x61;&#108;&#x68;&#111;&#115;&#116;&#58;&#57;&#48;&#x30;&#x30;&#47;&#x40;&#116;&#x65;&#115;&#x74;&#115;</a></li>
+</ul>
+<p>This will look like this initially:</p>
+<p><img src="img/01x.png" alt=""></p>
+<p>Select the Club and Player tests - and then press &#39;Start!&#39;:</p>
+<p><img src="img/02x.png" alt=""></p>
+<p>and they should be green. The tests are empty - but we have just verified that the test harness is functioning correctly.</p>
+<p>Also try the database interface:</p>
+<ul>
+<li><a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#104;&#116;&#116;&#112;&#x3a;&#47;&#47;&#x6c;&#x6f;&#x63;&#97;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x3a;&#57;&#x30;&#x30;&#48;&#47;&#x40;&#100;&#x62;">&#104;&#116;&#116;&#112;&#x3a;&#47;&#47;&#x6c;&#x6f;&#x63;&#97;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x3a;&#57;&#x30;&#x30;&#48;&#47;&#x40;&#100;&#x62;</a></li>
+</ul>
+</li>
+      
+        <li> <h1>Initial Tests for Player and Club</h1>
+<h2>PlayerTest</h2>
+<p>In PlayerTest introduce a fixture and create some test objects:</p>
+<pre><code class="lang-java">public class PlayerTest extends UnitTest 
+{
+  private Player p1, p2, p3;
+
+  @Before
+  public void setup()
+  {
+    p1 = new Player(&quot;mike&quot;);
+    p2 = new Player(&quot;jim&quot;);
+    p3 = new Player(&quot;frank&quot;);
+    p1.save();
+    p2.save();
+    p3.save();
+  }
+
+  @After
+  public void teardown()
+  {
+    p1.delete();
+    p2.delete();
+    p3.delete();
+  }
+
+  @Test
+  public void testCreate()
+  { 
+  }
+}</code></pre>
+<p>Run the tests - and have a look at the database admin interface (<a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#104;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x6c;&#x6f;&#99;&#97;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x3a;&#x39;&#x30;&#48;&#x30;&#47;&#x40;&#100;&#98;">&#104;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x6c;&#x6f;&#99;&#97;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x3a;&#x39;&#x30;&#48;&#x30;&#47;&#x40;&#100;&#98;</a>). Can you see any player objects? No because teardown() is deleteing all of the objects. Comment out the @After annotation:</p>
+<pre><code class="lang-java"> //@After</code></pre>
+<p>and run the tests again. This time - if you refresh the database page - you will see the three player objects.  Being able to see them in the database interface can be particularly useful if you are introducing new relationships between objects.</p>
+<p>Now we will bring in  utility function into the Player class:</p>
+<pre><code class="lang-java">  public static Player findByName(String name)
+  {
+    return find(&quot;name&quot;, name).first();
+  }</code></pre>
+<p>Note this method is &#39;static&#39;.</p>
+<p>Now we can actually implement a test. </p>
+<pre><code class="lang-java">  @Test
+  public void testCreate()
+  {
+    Player a = Player.findByName(&quot;mike&quot;);
+    assertNotNull(a);
+    assertEquals(&quot;mike&quot;, a.name);
+    Player b = Player.findByName(&quot;jim&quot;);
+    assertNotNull(b);
+    assertEquals(&quot;jim&quot;, b.name);
+    Player c = Player.findByName(&quot;frank&quot;);
+    assertNotNull(c);
+    assertEquals(&quot;frank&quot;, c.name);
+  }</code></pre>
+<p>This test should pass. Change one of the strings to deliberately force an error just to be sure.</p>
+<p>Do one more (negative) test to make sure that if we try to find an object that is not there, we get null:</p>
+<pre><code class="lang-java">  @Test
+  public void testNotThere()
+  {
+    Player a = Player.findByName(&quot;george&quot;);
+    assertNull(a);
+  }</code></pre>
+<p>All tests should pass now.</p>
+<h2>ClubTest</h2>
+<p>Extend Club with the same utility methods as Player:</p>
+<pre><code class="lang-java">  public static Club findByName(String name)
+  {
+    return find(&quot;name&quot;, name).first();
+  }</code></pre>
+<p>and now we can write a similar set of tests in PlayerTest:</p>
+<pre><code class="lang-java">import org.junit.*;
+
+import java.util.*;
+import play.test.*;
+import models.*;
+
+public class ClubTest extends UnitTest 
+{
+  private Club c1, c2, c3;
+
+  @Before
+  public void setup()
+  {
+    c1 = new Club(&quot;tramore&quot;);
+    c2 = new Club(&quot;dunmore&quot;);
+    c3 = new Club(&quot;fenor&quot;);
+    c1.save();
+    c2.save();
+    c3.save();
+  }
+
+  @After
+  public void teardown()
+  {
+    c1.delete();
+    c2.delete();
+    c3.delete();
+  }
+
+  @Test
+  public void testCreate()
+  {
+    Club a = Club.findByName(&quot;tramore&quot;);
+    assertNotNull(a);
+    assertEquals(&quot;tramore&quot;, a.name);
+    Club b = Club.findByName(&quot;dunmore&quot;);
+    assertNotNull(b);
+    assertEquals(&quot;dunmore&quot;, b.name);
+    Club c = Club.findByName(&quot;fenor&quot;);
+    assertNotNull(c);
+    assertEquals(&quot;fenor&quot;, c.name);
+  }
+
+  @Test
+  public void testNotThere()
+  {
+    Club a = Club.findByName(&quot;george&quot;);
+    assertNull(a);
+  }
+}</code></pre>
+<p>These tests should run successfully. Experiment with commenting out the @After annotation and seeing the actual objects in the database.</p>
+</li>
+      
+        <li> <h1>Modeling a Player / Club Relationship</h1>
+<p>Currently there is no relationship between player and club - which can be modeled like this:</p>
+<p><img src="img/14.png" alt=""></p>
+<p>We can now implement this relationship. Modify the Club class as follows:</p>
+<pre><code class="lang-java">
+...
+...
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+
+import play.db.jpa.Model;
+...
+...
+
+
+public class Club extends Model
+{
+  //... 
+  @OneToMany(cascade=CascadeType.ALL)
+  public List&lt;Player&gt; players;
+
+  public Club(String name)
+  {
+    this.name = name;
+    this.players = new ArrayList&lt;Player&gt;();
+  }
+  //...
+  public void addPlayer(Player player)
+  {
+    players.add(player);
+  }
+  //...
+}</code></pre>
+<p>This establishes the relationship as modeled in UML.</p>
+<h2>Testing a Player / Club Relationship</h2>
+<p>We will focus these tests in the ClubTest class. Expand the fixture:</p>
+<pre><code class="lang-java">  private Player p1, p2, p3;</code></pre>
+<p>and in the setup(), create some players and add some of them (not all)  to the &#39;c1&#39; club:</p>
+<pre><code class="lang-java">  @Before
+  public void setup()
+  {
+    p1 = new Player(&quot;mike&quot;);
+    p2 = new Player(&quot;jim&quot;);
+    p3 = new Player(&quot;frank&quot;);
+    c1 = new Club(&quot;tramore&quot;);
+    c2 = new Club(&quot;dunmore&quot;);
+    c3 = new Club(&quot;fenor&quot;);
+
+    c1.addPlayer(p1);
+    c1.addPlayer(p2);
+
+    c1.save();
+    c2.save();
+    c3.save();
+  }</code></pre>
+<p>We can now write a new test to see if the &#39;tramore&#39; has the players &quot;mike&quot; and &quot;jim&quot;:</p>
+<pre><code class="lang-java">  @Test
+  public void testPlayers()
+  {
+    Club tramore = Club.findByName(&quot;tramore&quot;);
+
+    assertEquals (2, tramore.players.size());
+
+    Player mike  = Player.findByName(&quot;mike&quot;);
+    Player jim   = Player.findByName(&quot;jim&quot;);
+    Player frank = Player.findByName(&quot;framk&quot;);
+
+    assertTrue  (tramore.players.contains(mike));
+    assertTrue  (tramore.players.contains(jim));
+    assertFalse (tramore.players.contains(frank));
+  }</code></pre>
+<p>This test should pass.</p>
+<p>We might be interested in seeing how the database models the relationship. Comment out the @After annotation, and also all of the @Test annotations except one (the last one). Run the test, and then explore the Player objects in the database interface. See if you can make sense of them. You may wish to do this occasionally, but be sure to comment in all the annotations, and perhaps also restart the application as leaving these annotations out will cause serious anomalies in the database.</p>
+<p>Now introduce the following test:</p>
+<pre><code class="lang-java">  @Test
+  public void testRemovePlayer()
+  {
+    Club tramore = Club.findByName(&quot;tramore&quot;);
+    assertEquals(2, tramore.players.size());
+
+    Player mike  = Player.findByName(&quot;mike&quot;);
+    assertTrue(tramore.players.contains(mike));
+    tramore.players.remove(mike);
+    tramore.save();
+
+    Club c = Club.findByName(&quot;tramore&quot;);
+    assertEquals(1, c.players.size());
+
+    mike.delete();
+  }</code></pre>
+<p>Read and absorb the logic of this test. As an experiment, comment out the final line (deleting mike). Then look to the database interface and note that mike is still in the database after the test have run. </p>
+<p>Note also that if we leave the deletion of mike commented out, and re-run the tests - then other tests start to fail. The only cure now will be to restart the application.</p>
+</li>
+      
+        <li> <h2>Bidirectional Club / Player Relationship</h2>
+<p>We might like each player to also &#39;know&#39; which club he/she belongs to. In fact this is probably a more natural relationship for these model elements:</p>
+<p><img src="img/17.png" alt=""></p>
+<p>Contrast this with the earlier version:</p>
+<p><img src="img/14.png" alt=""></p>
+<p>Implementing this variant of the relationship requires additional attributes and annotations in both Player and Club.</p>
+<h2>Player:</h2>
+<pre><code class="lang-java">...
+import javax.persistence.ManyToOne;
+...
+
+  @ManyToOne
+  public Club club;</code></pre>
+<h2>Club</h2>
+<pre><code>  @OneToMany(mappedBy=&quot;club&quot;, cascade=CascadeType.ALL)
+  public List&lt;Player&gt; players;</code></pre>
+<p>The name &#39;club&#39; must match in both the annotation and the attribute. We also need to make the following adjustment to the Club.addPlayer method:</p>
+<pre><code class="lang-java">  public void addPlayer(Player player)
+  {
+    player.club = this;
+    players.add(player);
+  }</code></pre>
+<p>This method ensures that the relationship is correctly established.</p>
+<p>No adjustment to the model can be considered complete without a unit test. Introduce the following test to ClubTest:</p>
+<pre><code class="lang-java">  @Test
+  public void testPlayerClub()
+  {
+    Player mike  = Player.findByName(&quot;mike&quot;);
+    assertNotNull (mike.club);
+    assertEquals (&quot;tramore&quot;, mike.club.name);
+  }</code></pre>
+<p>Whenever you change the model you should restart the application. Do this now and make sure this passes.</p>
+</li>
+      
+        <li> <h1>Division + Sponsor</h1>
+<p>We would now like to extend the model to include the following extra classes:</p>
+<p><img src="img/19.png" alt=""></p>
+<p>These are the new classes for Division &amp; Sponsor:</p>
+<h2>Division.java</h2>
+<pre><code class="lang-java">package models;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+
+import play.db.jpa.Model;
+
+@Entity
+public class Division extends Model
+{
+  public String name;
+
+  @OneToMany(cascade=CascadeType.ALL)
+  public List&lt;Club&gt; members;
+
+  public Division(String name)
+  {
+    this.name = name;
+    members = new ArrayList&lt;Club&gt;();
+  } 
+
+  public void addClub(Club club)
+  {
+    members.add(club);
+  }
+
+  public String toString()
+  {
+    return name;
+  }
+
+  public static Division findByName(String name)
+  {
+    return find(&quot;name&quot;, name).first();
+  }
+}</code></pre>
+<h2>Sponsor.java</h2>
+<pre><code class="lang-java">package models;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+
+import play.db.jpa.Model;
+
+@Entity
+public class Sponsor extends Model
+{
+  public String name;
+
+  @ManyToMany (mappedBy=&quot;sponsors&quot;)
+  public List&lt;Club&gt; support;
+
+  public Sponsor(String name)
+  {
+    this.name = name;
+    support = new ArrayList&lt;Club&gt;();
+  }
+
+  public void addSuport(Club club)
+  {
+    support.add(club);
+  }
+
+  public String toString()
+  {
+    return name;
+  }
+}</code></pre>
+<ul>
+<li>some modifications to Club:</li>
+</ul>
+<h2>Club.java</h2>
+<pre><code class="lang-java">
+  //...
+  @ManyToMany
+  public List&lt;Sponsor&gt; sponsors;
+  //...
+
+  public Club(String name)
+  {
+    this.name = name;
+    this.players = new ArrayList&lt;Player&gt;();
+    this.sponsors = new ArrayList&lt;Sponsor&gt;();
+  }
+
+  public void addSponsor(Sponsor company)
+  {
+    sponsors.add(company);  
+  }</code></pre>
+</li>
+      
+        <li> <h1>Tests</h1>
+<p>We can significantly simplify aspects of the testing if we invest some time in setting up test objects in yaml first.</p>
+<p>Create a &#39;data.yml&#39; file in &#39;conf&#39; and populate as follows:</p>
+<pre><code>Sponsor(pub):
+    name: pub 
+
+Sponsor(newsagent):
+    name: newsagent    
+
+Club(dunmore):
+    name: dunmore
+
+Club(tramore):
+    name: tramore
+    sponsors:
+          - pub
+          - newsagent
+
+Club(fenor):
+    name: fenor
+    sponsors:
+          - newsagent   
+
+Player(jim):
+    name: jim
+    club: dunmore
+
+Player(mary):
+    name: mary
+    club: dunmore
+
+Player(sam):
+    name: sam
+    club: tramore
+
+Player(john):
+    name: john
+    club: tramore
+
+Player(mike):
+    name: mike
+    club: fenor
+
+Player(linda):
+    name: linda
+    club: fenor    
+
+Division(senior):
+    name: senior
+    members:
+            - tramore
+            - dunmore
+
+Division(junior):
+    name: junior
+    members:
+            - fenor
+
+Sponsor(newsagent):
+    name: newsagent
+    support:
+         - tramore
+         - fenor
+
+Sponsor(pub):
+    name: pub 
+    support:
+         - tramore</code></pre>
+<p>Note carefully how the sponsors appear twice. Why is this?</p>
+<p>Now bring in a new test class that will exercise this model:</p>
+<pre><code class="lang-java">import org.junit.*;
+
+import java.util.*;
+
+import play.Logger;
+import play.test.*;
+import models.*;
+
+public class ComprehensiveTest extends UnitTest
+{
+  @Before
+  public void setup()
+  {
+    Fixtures.loadModels(&quot;data.yml&quot;);
+  }
+
+  @After
+  public void teardown()
+  {
+    Fixtures.deleteAllModels();
+  }
+
+  @Test
+  public void testPlayerClubLong()
+  {
+    Player jim;
+    Club   dunmore;
+
+    jim = Player.find(&quot;byName&quot;, &quot;jim&quot;).first();
+    assertNotNull(jim);
+    assertEquals(jim.name, &quot;jim&quot;);
+
+    dunmore = jim.club;
+    assertEquals(&quot;dunmore&quot;, dunmore.name);
+
+    dunmore = Club.find(&quot;byName&quot;, &quot;dunmore&quot;).first();
+    assertNotNull(dunmore);
+    assertEquals(&quot;dunmore&quot;, dunmore.name);    
+    assertEquals(2, dunmore.players.size());
+
+    Player p1 = dunmore.players.get(0);
+    assertTrue (p1.name.equals(&quot;jim&quot;) || p1.name.equals(&quot;mary&quot;));
+    Player p2 = dunmore.players.get(1);
+    assertTrue (p2.name.equals(&quot;jim&quot;) || p2.name.equals(&quot;mary&quot;));  
+  }
+
+  @Test
+  public void testDivisionClubLong()
+  {
+    Division senior = Division.find(&quot;byName&quot;, &quot;senior&quot;).first();
+    assertNotNull(senior);
+    assertEquals(2, senior.members.size());
+
+    Club c1 = senior.members.get(0);
+    Club c2  = senior.members.get(1);
+
+    assertTrue (c1.name.equals(&quot;tramore&quot;) || c1.name.equals(&quot;dunmore&quot;));      
+    assertTrue (c2.name.equals(&quot;tramore&quot;) || c2.name.equals(&quot;dunmore&quot;));          
+  }
+
+
+  //----------------------------------------------------------------------
+  @Test
+  public void testPlayerClub()
+  {
+    Club   dunmore = Club.find(&quot;byName&quot;, &quot;dunmore&quot;).first();
+    Player jim     = Player.find(&quot;byName&quot;, &quot;jim&quot;).first(); 
+    Player mary    = Player.find(&quot;byName&quot;, &quot;mary&quot;).first(); 
+    assertNotNull(mary);
+
+    assertTrue (dunmore.players.contains(jim));
+    assertTrue (dunmore.players.contains(mary)); 
+  }
+
+  @Test
+  public void testDivisionClub()
+  {
+    Division senior  = Division.find(&quot;byName&quot;, &quot;senior&quot;).first();
+    Club     dunmore = Club.find(&quot;byName&quot;, &quot;dunmore&quot;).first();
+    Club     tramore = Club.find(&quot;byName&quot;, &quot;tramore&quot;).first();
+
+    assertTrue (senior.members.contains(dunmore));
+    assertTrue (senior.members.contains(tramore));
+  }
+
+  @Test
+  public void testClubSponsorShort()
+  {
+    Sponsor  newsagent = Sponsor.find(&quot;byName&quot;, &quot;newsagent&quot;).first();
+    Club     fenor   = Club.find(&quot;byName&quot;, &quot;fenor&quot;).first();
+    Club     tramore   = Club.find(&quot;byName&quot;, &quot;tramore&quot;).first();
+
+    assertTrue(newsagent.support.contains(fenor));
+    assertTrue(newsagent.support.contains(tramore));
+
+    assertTrue(fenor.sponsors.contains(newsagent));
+    assertTrue(tramore.sponsors.contains(newsagent));
+  }
+
+  @Test
+  public void testEditPlayerClub()
+  {
+    Club   dunmore = Club.find(&quot;byName&quot;, &quot;dunmore&quot;).first();
+    Player jim     = Player.find(&quot;byName&quot;, &quot;jim&quot;).first(); 
+    Player mary    = Player.find(&quot;byName&quot;, &quot;mary&quot;).first();
+
+    dunmore.players.remove(mary);
+    mary.delete();
+    dunmore.save();
+
+    assertEquals (dunmore.players.size(), 1);
+    assertTrue (dunmore.players.contains(jim));
+
+    assertEquals(0, Player.find(&quot;byName&quot;, &quot;mary&quot;).fetch().size());
+
+    Player sara     = new Player(&quot;sara&quot;);
+    dunmore.addPlayer(sara);
+    dunmore.save();
+    assertEquals (dunmore.players.size(), 2);    
+  }
+
+  @Test
+  public void testEditClubSponsor()
+  {
+    Sponsor  newsagent = Sponsor.find(&quot;byName&quot;, &quot;newsagent&quot;).first();
+    Club     fenor   = Club.find(&quot;byName&quot;, &quot;fenor&quot;).first();
+
+    assertEquals(2, newsagent.support.size());  
+
+    newsagent.support.remove(fenor);
+    fenor.sponsors.remove(newsagent);
+
+    newsagent.save();
+    fenor.save();
+
+    assertEquals(1, newsagent.support.size());  
+  }
+}</code></pre>
+<p>Run the app in test mode, and run this new test suite. All of these tests should run.</p>
+</li>
+      
+        <li> <h1>Controllers/View</h1>
+<p>Incorporate all of these controllers so we can interact with the model via the UI:</p>
+<h2>Players</h2>
+<pre><code class="lang-java">package controllers;
+
+import java.util.List;
+
+import models.Player;
+import play.mvc.Controller;
+
+public class Players extends Controller
+{      
+  public static void index()
+  {
+    List&lt;Player&gt; players = Player.findAll();
+    render (players);
+  }
+}</code></pre>
+<h2>Clubs</h2>
+<pre><code class="lang-java">package controllers;
+
+import java.util.List;
+
+import models.Club;
+import play.mvc.Controller;
+
+public class Clubs extends Controller
+{      
+  public static void index()
+  {
+    List&lt;Club&gt; clubs = Club.findAll();
+    render (clubs);
+  }
+}</code></pre>
+<h2>Sponsors</h2>
+<pre><code class="lang-java">package controllers;
+
+import java.util.List;
+
+import models.Sponsor;
+import play.mvc.Controller;
+
+public class Sponsors extends Controller
+{      
+  public static void index()
+  {
+    List&lt;Sponsor&gt; sponsors = Sponsor.findAll();
+    render (sponsors);
+  }
+}</code></pre>
+<h2>Divisions</h2>
+<pre><code class="lang-java">package controllers;
+
+import java.util.List;
+
+import models.Division;
+import play.mvc.Controller;
+
+public class Division extends Controller
+{      
+  public static void index()
+  {
+    List&lt;Division&gt; divisions = Division.findAll();
+
+    render (divisions);
+  }
+}</code></pre>
+<p>You will also need the corresponding views - each one called <code>index.html</code>:</p>
+<h2>views/Players</h2>
+<pre><code class="lang-html">#{extends &#39;main.html&#39; /}
+#{set title:&#39;Players&#39; /}
+
+&lt;nav&gt;
+  &lt;a class=&quot;item&quot;         href=&quot;/divisions&quot;&gt; Divisions &lt;/a&gt;
+  &lt;a class=&quot;item&quot;         href=&quot;/clubs&quot;&gt;     Clubs     &lt;/a&gt;
+  &lt;a class=&quot;active item&quot;  href=&quot;/players&quot;&gt;   Players   &lt;/a&gt;            
+  &lt;a class=&quot;item&quot;         href=&quot;/sponsors&quot;&gt;  Sponsors  &lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;section&gt;        
+ &lt;h1&gt;Players&lt;/h1&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Player&lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      #{list items:players, as:&#39;player&#39;}
+        &lt;tr&gt;
+          &lt;td&gt;${player.name}&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      #{/list}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;</code></pre>
+<h2>views/Clubs</h2>
+<pre><code class="lang-html">#{extends &#39;main.html&#39; /}
+#{set title:&#39;Clubs&#39; /}
+
+&lt;nav&gt;
+  &lt;a class=&quot;item&quot;         href=&quot;/divisions&quot;&gt; Divisions &lt;/a&gt;
+  &lt;a class=&quot;active item&quot;  href=&quot;/clubs&quot;&gt;     Clubs     &lt;/a&gt;
+  &lt;a class=&quot;item&quot;         href=&quot;/players&quot;&gt;   Players   &lt;/a&gt;            
+  &lt;a class=&quot;item&quot;         href=&quot;/sponsors&quot;&gt;  Sponsors  &lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;section&gt;        
+ &lt;h1&gt;Clubs&lt;/h1&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Club&lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      #{list items:clubs, as:&#39;club&#39;}
+        &lt;tr&gt;
+          &lt;td&gt;${club.name}&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      #{/list}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;</code></pre>
+<h2>views/Sponsors</h2>
+<pre><code class="lang-html">#{extends &#39;main.html&#39; /}
+#{set title:&#39;Sponsors&#39;/}
+
+&lt;nav&gt;
+  &lt;a class=&quot;item&quot;         href=&quot;/divisions&quot;&gt; Divisions &lt;/a&gt;
+  &lt;a class=&quot;item&quot;         href=&quot;/clubs&quot;&gt;     Clubs     &lt;/a&gt;
+  &lt;a class=&quot;item&quot;         href=&quot;/players&quot;&gt;   Players   &lt;/a&gt;            
+  &lt;a class=&quot;active item&quot;  href=&quot;/sponsors&quot;&gt;  Sponsors  &lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;section&gt;        
+ &lt;h1&gt;Sponsors&lt;/h1&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Sponsor&lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      #{list items:sponsors, as:&#39;sponsor&#39;}
+        &lt;tr&gt;
+          &lt;td&gt;${sponsor.name}&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      #{/list}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;</code></pre>
+<h2>views/Divisions</h2>
+<pre><code class="lang-html">#{extends &#39;main.html&#39; /}
+#{set title:&#39;Divisions&#39; /}
+
+&lt;nav&gt;
+  &lt;a class=&quot;active item&quot;  href=&quot;/divisions&quot;&gt; Divisions &lt;/a&gt;
+  &lt;a class=&quot;item&quot;         href=&quot;/clubs&quot;&gt;     Clubs     &lt;/a&gt;
+  &lt;a class=&quot;item&quot;         href=&quot;/players&quot;&gt;   Players   &lt;/a&gt;            
+  &lt;a class=&quot;item&quot;         href=&quot;/sponsors&quot;&gt;  Sponsors  &lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;section&gt;        
+ &lt;h1&gt;Divisions&lt;/h1&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Division&lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      #{list items:divisions, as:&#39;division&#39;}
+        &lt;tr&gt;
+          &lt;td&gt;${division.name}&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      #{/list}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;</code></pre>
+</li>
+      
+        <li> <h1>Routes + Test Data</h1>
+<p>Before we can start the app in normal mode, we will need to make sure this line is uncommented in the <code>application.conf</code> file:</p>
+<pre><code>db.default=mem</code></pre>
+<p>Now incorporate the following routes:</p>
+<pre><code># Home page
+GET     /                                       Divisions.index
+GET     /divisions                              Divisions.index
+GET     /clubs                                  Clubs.index
+GET     /players                                Players.index
+GET     /sponsors                               Sponsors.index</code></pre>
+<p>Save everything and run (not in test mode). Browse to</p>
+<ul>
+<li><a href="http://localhost:9000/players">http://localhost:9000/players</a></li>
+<li><a href="http://localhost:9000/clubs">http://localhost:9000/clubs</a></li>
+<li><a href="http://localhost:9000/sponsors">http://localhost:9000/sponsors</a></li>
+<li><a href="http://localhost:9000/divisions">http://localhost:9000/divisions</a></li>
+</ul>
+<p>It views will be largely bank and unformatted. </p>
+<p>Create a class called &#39;BootStrap.java&#39; in you &#39;app&#39; folder, and replace its content with this source here:</p>
+<h2>BootStrap.java</h2>
+<pre><code class="lang-java">import java.util.List;
+
+import play.*;
+import play.jobs.*;
+import play.test.*;
+import models.*;
+
+@OnApplicationStart
+public class Bootstrap extends Job 
+{ 
+  public void doJob()
+  {
+    Fixtures.deleteDatabase(); 
+    Fixtures.loadModels(&quot;data.yml&quot;);
+  }
+}</code></pre>
+<p>Run the app again, and you should start to see some data.</p>
+</li>
+      
+        <li> <h1>Showing Division/Club/Player Relationships</h1>
+<p>Currently UI for the model if read only - and we can only see each model in isolation (we cant see relationships).</p>
+<p>First, we tackle the relationships. Update the <code>&lt;table&gt;</code> element of the following views with this version:</p>
+<h2>views/Players/index.html</h2>
+<pre><code class="lang-html">&lt;section&gt;        
+ &lt;h1&gt;Players&lt;/h1&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt; Player&lt;/th&gt;
+        &lt;th&gt; Club &lt;/th&gt;
+        &lt;th&gt; &lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      #{list items:players, as:&#39;player&#39;}
+        &lt;tr&gt;
+          &lt;td&gt;${player.name}&lt;/td&gt;
+          &lt;td&gt;${player.club.name}&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      #{/list}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;</code></pre>
+<h2>views/ClubsController/index.html</h2>
+<pre><code class="lang-html">&lt;section&gt;        
+  &lt;h1&gt;Clubs&lt;/h1&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Club&lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      #{list items:clubs, as:&#39;club&#39;}
+        &lt;tr&gt;
+          &lt;td&gt;${club.name}&lt;/td&gt;
+          &lt;td&gt;
+             &lt;table&gt;
+               &lt;tr&gt;
+               #{list items:club.players, as:&#39;player&#39;}
+                 &lt;td&gt;${player.name}&lt;/td&gt; &lt;/tr&gt;
+               #{/list}
+               &lt;/tr&gt;
+             &lt;/table&gt;         
+          &lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      #{/list}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;</code></pre>
+<h2>views/DivisionsController/index.html</h2>
+<pre><code class="lang-html">&lt;section&gt;        
+  &lt;h1&gt;Divisions&lt;/h1&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Division&lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+        &lt;th&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      #{list items:divisions, as:&#39;division&#39;}
+        &lt;tr&gt;
+          &lt;td&gt;${division.name}&lt;/td&gt;
+          &lt;td&gt;
+            &lt;table class=&quot;table&quot;&gt;
+              &lt;tr&gt;
+              #{list items:division.members, as:&#39;club&#39;}
+                &lt;td&gt;${club.name}&lt;/td&gt; &lt;/tr&gt;
+              #{/list}
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      #{/list}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;</code></pre>
+<p>See if you can make sense of the above templates. Save everything and reload. You should be able to see what players belong to which clubs, and also what divisions the clubs are in.</p>
+</li>
+      
+        <li> <h1>Delete Player Feature</h1>
+<p>Introduce the following method into the controllers/Players:</p>
+<pre><code class="lang-java">  public static void delete(Long id)
+  {
+    Player player = Player.findById(id);
+    if (player != null)
+    {
+      if (player.club != null)
+      {
+        player.club.removePlayer(player);
+        player.club.save();
+      }
+      player.delete();
+    }
+    index();
+  }</code></pre>
+<p>Which requires this method in models/Club.java</p>
+<pre><code class="lang-java">  public void removePlayer(Player player)
+  {
+    players.remove(player);
+  }</code></pre>
+<p>Now change the loop in the &#39;views/Players/index.html&#39; file:</p>
+<pre><code class="lang-html">      #{list items:players, as:&#39;player&#39;}
+        &lt;tr&gt;
+          &lt;td&gt;${player.name}&lt;/td&gt;
+          &lt;td&gt;${player.club.name}&lt;/td&gt;
+          &lt;td&gt; &lt;a href=&quot;/players/delete/${player.id}&quot;&gt;Delete&lt;/a&gt; &lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      #{/list}</code></pre>
+<p>(just one line changed in the above).</p>
+<p>Run the app - players now have a delete button, when you press it, you get an error. This is because we need to establish a route for the delete link. Introduce this in to conf/routes now:</p>
+<pre><code>GET    /players/delete/{id}                     Players.delete</code></pre>
+<p>And try again. You should be able to delete players.</p>
+</li>
+      
+        <li> <p>Solution </p>
+<h2>Repository so far:</h2>
+<ul>
+<li><a href="https://github.com/wit-ict-summer-school-2017/jpamodel/releases/tag/V11">https://github.com/wit-ict-summer-school-2017/jpamodel/releases/tag/V11</a></li>
+</ul>
+</li>
+      
+    </ul>
+  </div>
+</body>
