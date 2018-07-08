@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
@@ -36,6 +38,7 @@ pre code {
 
 img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
 }
 
 h1, h2, h3 {
@@ -60,9 +63,10 @@ h3 {
 
 
   </style>
-<body>
 
-  
+  <body class="lab">
+
+    
   <div class="uk-offcanvas-content">
     <div id="offcanvas-usage" uk-offcanvas>
       <div class="uk-offcanvas-bar">
@@ -132,53 +136,51 @@ Lab-7 Playlist 4
               </li>
             
           
-            
-          
-            
-          
         </ul>
       </div>
     </div>
   </div>
 
 
-  <div uk-sticky>
-    <nav uk-navbar>
-      <div class="uk-navbar-left">
-        <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
-          <li><a href="#offcanvas-usage" uk-icon="icon: menu", uk-toggle title="Switch Lab" pos="bottom" uk-tooltip></a></li>
-          <li class="uk-active"><a href="../index.html">1: Introduction to Glitch </a></li>
-        </ul>
-      </div>
+    <div uk-sticky>
+      <nav class="uk-navbar">
+        <div class="uk-navbar-left">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
+            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
+                   uk-tooltip></a></li>
+            <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
+                                     pos="bottom" uk-tooltip>1: Introduction to Glitch </a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
+              uk-switcher="connect: .switcher-container">
+            
+              <li><a href="#">Lab-1 Glitch Intro</a></li>
+            
+              <li><a href="#">01</a></li>
+            
+              <li><a href="#">02</a></li>
+            
+              <li><a href="#">03</a></li>
+            
+              <li><a href="#">04</a></li>
+            
+              <li><a href="#">Exercises</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-
-      <div class="uk-navbar-right">
-        <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
-          
-            <li><a href="#">Lab-1 Glitch Intro</a></li>
-          
-            <li><a href="#">01</a></li>
-          
-            <li><a href="#">02</a></li>
-          
-            <li><a href="#">03</a></li>
-          
-            <li><a href="#">04</a></li>
-          
-            <li><a href="#">Exercises</a></li>
-          
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="uk-container uk-container-expand">
-    <ul class="uk-switcher switcher-container">
-      
-        <li> <h1>Objectives</h1>
+    <div class="uk-container uk-container-expand">
+      <ul class="uk-switcher switcher-container">
+        
+          <li> <h1>Objectives</h1>
 <p>Create, modify and view your first Gomix project.</p>
 </li>
-      
-        <li> <h1>Gomix Setup</h1>
+        
+          <li> <h1>Gomix Setup</h1>
 <p>If you do not have a github account, create one now:</p>
 <ul>
 <li><a href="https://github.com">https://github.com</a></li>
@@ -199,8 +201,8 @@ Lab-7 Playlist 4
 <p>Do this now with someone also doing the lab - perhaps you can pair up with someone via the slack channel?</p>
 <p>Verify that you each see different lists depending on what has been entered. Enter some &#39;dreams&#39; into you someone else&#39;s app.</p>
 </li>
-      
-        <li> <h1>Project Structure and Editing</h1>
+        
+          <li> <h1>Project Structure and Editing</h1>
 <p>Back in the <code>source</code> view, look at the project structure in more detail. Click on the <code>Markdown</code> button on the top - this will switch to edit mode:</p>
 <p><img src="img/03.png" alt=""></p>
 <p>You can edit this file now - it is documentation on your new app. Toggle the markdown button to switch back to preview mode.</p>
@@ -238,8 +240,8 @@ var dreams = [
 <p><img src="img/07.png" alt=""></p>
 <p>Experiment with making small changes in <code>server.js</code> now and keep an eye on the logs. Also, notice that if the changes you make are not correct syntax, this should be highlighted in the editor.</p>
 </li>
-      
-        <li> <h1>Configuring the Project</h1>
+        
+          <li> <h1>Configuring the Project</h1>
 <p>The project name can be changed by directly entering a new name on the sidebar:</p>
 <p><img src="img/08.png" alt=""></p>
 <p>This will also change the project url, so if you have shared the app you will have to re-share the new url.</p>
@@ -251,8 +253,8 @@ var dreams = [
 <p>Experiment with of all of these options.</p>
 <p>For <code>Export to github</code>, the repository must already exist in your account. The project will, however, be on a different branch from master, so might not be visible at first unless you switch branches.</p>
 </li>
-      
-        <li> <h1>Run Offline</h1>
+        
+          <li> <h1>Run Offline</h1>
 <p>On your workstation, install Node.js:</p>
 <ul>
 <li><a href="https://nodejs.org">https://nodejs.org</a> </li>
@@ -282,8 +284,8 @@ Your app is listening on port 4000</code></pre>
 <p>If you open a browser now on <a href="http://localhost:4000">http://localhost:4000</a> your application should be running locally:</p>
 <p><img src="img/13.png" alt=""></p>
 </li>
-      
-        <li> <h1>Exercises</h1>
+        
+          <li> <h1>Exercises</h1>
 <h2>Exercise 1: Semantic UI</h2>
 <p>Modify index.html to include the latest semantic ui libraries:</p>
 <h3>Step 1:</h3>
@@ -307,7 +309,25 @@ Your app is listening on port 4000</code></pre>
 <h2>Exercise 3:</h2>
 <p>If you completed the above tasks, download the the app again and run it locally (see step 4).</p>
 </li>
-      
-    </ul>
-  </div>
-</body>
+        
+      </ul>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass('');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertAfter($images[i]);
+      $('<br>').insertAfter($images[i]);
+    }
+  });
+});
+
+    </script>
+  </body>
+</html>

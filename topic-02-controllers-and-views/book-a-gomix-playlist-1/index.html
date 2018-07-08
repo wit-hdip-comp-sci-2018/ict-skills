@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
@@ -36,6 +38,7 @@ pre code {
 
 img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
 }
 
 h1, h2, h3 {
@@ -60,9 +63,10 @@ h3 {
 
 
   </style>
-<body>
 
-  
+  <body class="lab">
+
+    
   <div class="uk-offcanvas-content">
     <div id="offcanvas-usage" uk-offcanvas>
       <div class="uk-offcanvas-bar">
@@ -132,59 +136,57 @@ Lab-7 Playlist 4
               </li>
             
           
-            
-          
-            
-          
         </ul>
       </div>
     </div>
   </div>
 
 
-  <div uk-sticky>
-    <nav uk-navbar>
-      <div class="uk-navbar-left">
-        <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
-          <li><a href="#offcanvas-usage" uk-icon="icon: menu", uk-toggle title="Switch Lab" pos="bottom" uk-tooltip></a></li>
-          <li class="uk-active"><a href="../index.html">2: Controllers & Views </a></li>
-        </ul>
-      </div>
+    <div uk-sticky>
+      <nav class="uk-navbar">
+        <div class="uk-navbar-left">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
+            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
+                   uk-tooltip></a></li>
+            <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
+                                     pos="bottom" uk-tooltip>2: Controllers & Views </a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
+              uk-switcher="connect: .switcher-container">
+            
+              <li><a href="#">Lab-3 Playlist 1</a></li>
+            
+              <li><a href="#">01</a></li>
+            
+              <li><a href="#">02</a></li>
+            
+              <li><a href="#">03</a></li>
+            
+              <li><a href="#">04</a></li>
+            
+              <li><a href="#">05</a></li>
+            
+              <li><a href="#">06</a></li>
+            
+              <li><a href="#">07</a></li>
+            
+              <li><a href="#">Exercises</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-
-      <div class="uk-navbar-right">
-        <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
-          
-            <li><a href="#">Lab-3 Playlist 1</a></li>
-          
-            <li><a href="#">01</a></li>
-          
-            <li><a href="#">02</a></li>
-          
-            <li><a href="#">03</a></li>
-          
-            <li><a href="#">04</a></li>
-          
-            <li><a href="#">05</a></li>
-          
-            <li><a href="#">06</a></li>
-          
-            <li><a href="#">07</a></li>
-          
-            <li><a href="#">Exercises</a></li>
-          
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="uk-container uk-container-expand">
-    <ul class="uk-switcher switcher-container">
-      
-        <li> <h1>Objectives</h1>
+    <div class="uk-container uk-container-expand">
+      <ul class="uk-switcher switcher-container">
+        
+          <li> <h1>Objectives</h1>
 <p>Import and run a new starter project. Extend this project to include multiple &#39;views&#39;. Explore the handlebars templating library.</p>
 </li>
-      
-        <li> <h1>Template 1</h1>
+        
+          <li> <h1>Template 1</h1>
 <p>Create a new project in Glitch - this will be a replica of the project created at the start of the last lab. Rename the project to your preference.</p>
 <p>Turn on the logs viewer now.</p>
 <p>From the Advanced options, Select <code>Import a project from github</code>. (You may need to grant access to your github account before this option becomes available).</p>
@@ -202,8 +204,8 @@ Lab-7 Playlist 4
 <p><img src="img/19.png" alt=""></p>
 <p>This should fix the problem. You only need this step if the app will fail to run...</p>
 </li>
-      
-        <li> <h1>Playlist</h1>
+        
+          <li> <h1>Playlist</h1>
 <p>We are going to evolve this project into a simple playlist maker, enabling a user to create a playlist of songs. In this step, we will layout a static version.</p>
 <p>First, we can make some simple changes to rebrand the app as <code>Playlist 1</code> instead of <code>Template 1</code></p>
 <p>First replace the existing corresponding lines of code with each of the following in the views:</p>
@@ -235,8 +237,8 @@ Lab-7 Playlist 4
 ...</code></pre>
 <p>Make sure the app is still running, but with the new branding. If there are errors, turn the logs and you may be able to see the source of the problem - which will usually be some small error in the javascript sources.</p>
 </li>
-      
-        <li> <h1>Static Playlist</h1>
+        
+          <li> <h1>Static Playlist</h1>
 <p>In this step we will start to display the playlist itself. First, create a new partial called <code>listsongs.hbs</code>:</p>
 <h2>views/partials/listsongs.hbs</h2>
 <pre><code class="lang-html">&lt;table class=&quot;ui table&quot;&gt;
@@ -317,8 +319,8 @@ Lab-7 Playlist 4
 ...</code></pre>
 <p>Error and debug messages may appear in red. You might need to open the <code>source</code> and <code>run</code> views of the app in side by side windows to get a clearer view of the logs.</p>
 </li>
-      
-        <li> <h1>Dynamic Playlist</h1>
+        
+          <li> <h1>Dynamic Playlist</h1>
 <p>The app as we have it now could have been completely built as a static web site. However, the framework and tools we have used in this version enable us to evolve this static site into an interactive web app.</p>
 <p>The first step is to eliminate some of the static content from the listsongs partial. Here is a new version to replace the current version (in listsongs.hbs replace the table with the following):</p>
 <pre><code class="lang-html">&lt;table class=&quot;ui table&quot;&gt;
@@ -412,8 +414,8 @@ index(request, response) {
 <p>This will change how the playlists are displayed in the logs:</p>
 <p><img src="img/13.png" alt=""></p>
 </li>
-      
-        <li> <h1>playlist-store</h1>
+        
+          <li> <h1>playlist-store</h1>
 <p>We would like to manage the playlists separately from the controller, so that we can eventually introduce multiple playlists.</p>
 <p>To prepare for this, create a new javascript module your app. Call it <code>playlist-store.js</code> in a new <code>models</code> folder. In Glitch, you can enter a full path, including a new directory when adding a file:</p>
 <p><img src="img/14.png" alt=""></p>
@@ -464,8 +466,8 @@ const dashboard = {
 module.exports = dashboard;</code></pre>
 <p>Notice in the above that we are importing the sonatas from the playlist-store module. Otherwise, the dashboard is unchanged.</p>
 </li>
-      
-        <li> <h1>Multiple playlists</h1>
+        
+          <li> <h1>Multiple playlists</h1>
 <p>Here is a new version of <code>playlist-store.js</code>:</p>
 <h2>models/playlist-store.js</h2>
 <pre><code>&#39;use strict&#39;;
@@ -596,8 +598,8 @@ OR</li>
 <li>the title of a song</li>
 </ul>
 </li>
-      
-        <li> <h1>Introducing JSON</h1>
+        
+          <li> <h1>Introducing JSON</h1>
 <p>In javascript, it can sometimes be very convenient to use a notation to represent a data structure, but without any additional javascript constructs. Java Script Object Notation (JSON) is designed for this purpose. Here is a new file to represent our playlists in JSON format, create it in your app now:</p>
 <h2>models/playlist-store.json</h2>
 <pre><code class="lang-js">{
@@ -648,8 +650,8 @@ const playlistCollection = require(&#39;./playlist-store.json&#39;).playlistColl
 module.exports = playlistCollection;</code></pre>
 <p>The program should behave exactly as before.</p>
 </li>
-      
-        <li> <h1>Exercises &amp; Archives</h1>
+        
+          <li> <h1>Exercises &amp; Archives</h1>
 <p>If you want to download a complete version of the app as it should be at the end of this lab, then create a new Gomix project, and import <code>wit-hdip-comp-sci-2018/playlist-1</code>. Be sure to create a new project first, as when you import you will completely replace the current project.</p>
 <h2>Exercise 1: Review the JSON file format</h2>
 <p>Look again at the playlist as represented in:</p>
@@ -687,7 +689,25 @@ module.exports = playlistCollection;</code></pre>
 <h2>Exercise 5: Run Locally</h2>
 <p>Download the app and run it on your own workstation. Instructions for doing this are in the last lab.</p>
 </li>
-      
-    </ul>
-  </div>
-</body>
+        
+      </ul>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass('');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertAfter($images[i]);
+      $('<br>').insertAfter($images[i]);
+    }
+  });
+});
+
+    </script>
+  </body>
+</html>

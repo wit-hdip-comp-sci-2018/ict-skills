@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
@@ -36,6 +38,7 @@ pre code {
 
 img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
 }
 
 h1, h2, h3 {
@@ -60,9 +63,10 @@ h3 {
 
 
   </style>
-<body>
 
-  
+  <body class="lab">
+
+    
   <div class="uk-offcanvas-content">
     <div id="offcanvas-usage" uk-offcanvas>
       <div class="uk-offcanvas-bar">
@@ -133,7 +137,21 @@ Lab-7 Playlist 4
             
           
             
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-play-jpa/book-a-jpa-01/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+JPA-01
+                </a>
+              </li>
+            
           
+            
+              <li>
+                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-play-jpa/book-b-jpa-02/index.html">
+  <i class="fas fa-flask " style="color:#00BCD4"> </i>
+JPA-02
+                </a>
+              </li>
             
           
         </ul>
@@ -142,55 +160,57 @@ Lab-7 Playlist 4
   </div>
 
 
-  <div uk-sticky>
-    <nav uk-navbar>
-      <div class="uk-navbar-left">
-        <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
-          <li><a href="#offcanvas-usage" uk-icon="icon: menu", uk-toggle title="Switch Lab" pos="bottom" uk-tooltip></a></li>
-          <li class="uk-active"><a href="../index.html">JPA: Model Relationships in Play </a></li>
-        </ul>
-      </div>
+    <div uk-sticky>
+      <nav class="uk-navbar">
+        <div class="uk-navbar-left">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
+            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
+                   uk-tooltip></a></li>
+            <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
+                                     pos="bottom" uk-tooltip>JPA: Model Relationships in Play </a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
+              uk-switcher="connect: .switcher-container">
+            
+              <li><a href="#">JPA-01</a></li>
+            
+              <li><a href="#">01</a></li>
+            
+              <li><a href="#">02</a></li>
+            
+              <li><a href="#">03</a></li>
+            
+              <li><a href="#">04</a></li>
+            
+              <li><a href="#">05</a></li>
+            
+              <li><a href="#">06</a></li>
+            
+              <li><a href="#">07</a></li>
+            
+              <li><a href="#">08</a></li>
+            
+              <li><a href="#">09</a></li>
+            
+              <li><a href="#">10</a></li>
+            
+              <li><a href="#">Solution</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-
-      <div class="uk-navbar-right">
-        <ul class="uk-subnav uk-background-secondary uk-subnav-pill uk-subnav-divider" uk-switcher="connect: .switcher-container">
-          
-            <li><a href="#">JPA-01</a></li>
-          
-            <li><a href="#">01</a></li>
-          
-            <li><a href="#">02</a></li>
-          
-            <li><a href="#">03</a></li>
-          
-            <li><a href="#">04</a></li>
-          
-            <li><a href="#">05</a></li>
-          
-            <li><a href="#">06</a></li>
-          
-            <li><a href="#">07</a></li>
-          
-            <li><a href="#">08</a></li>
-          
-            <li><a href="#">09</a></li>
-          
-            <li><a href="#">10</a></li>
-          
-            <li><a href="#">Solution</a></li>
-          
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="uk-container uk-container-expand">
-    <ul class="uk-switcher switcher-container">
-      
-        <li> <h1>Objectives</h1>
+    <div class="uk-container uk-container-expand">
+      <ul class="uk-switcher switcher-container">
+        
+          <li> <h1>Objectives</h1>
 <p>Build  new project to explore JPA relationships in more depth. in particular, define a model with OneToMany, MnyToOne and ManyToMany relations - and test each of the relationships via unit tests in order to ensure they are correctly implemented.</p>
 </li>
-      
-        <li> <h1>JPA Model Project</h1>
+        
+          <li> <h1>JPA Model Project</h1>
 <p>Create a brand new Play project. Do this by navigating to the correct folder folder (most likely your workspace) and running a command prompt. Then type:</p>
 <pre><code>play new jpamodel</code></pre>
 <p>Once this has completed, change into the folder just created (jpamodel) and run the eclipsify command:</p>
@@ -292,7 +312,7 @@ public class PlayerTest extends UnitTest
 <pre><code>play test</code></pre>
 <p>...and navigate to the test runner page:</p>
 <ul>
-<li><a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#104;&#x74;&#x74;&#x70;&#58;&#47;&#x2f;&#108;&#111;&#99;&#x61;&#108;&#x68;&#111;&#115;&#116;&#58;&#57;&#48;&#x30;&#x30;&#47;&#x40;&#116;&#x65;&#115;&#x74;&#115;">&#104;&#x74;&#x74;&#x70;&#58;&#47;&#x2f;&#108;&#111;&#99;&#x61;&#108;&#x68;&#111;&#115;&#116;&#58;&#57;&#48;&#x30;&#x30;&#47;&#x40;&#116;&#x65;&#115;&#x74;&#115;</a></li>
+<li><a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x74;&#116;&#112;&#x3a;&#47;&#x2f;&#x6c;&#x6f;&#99;&#x61;&#x6c;&#x68;&#111;&#x73;&#x74;&#x3a;&#x39;&#48;&#48;&#48;&#x2f;&#64;&#x74;&#101;&#115;&#116;&#x73;">&#x68;&#x74;&#116;&#112;&#x3a;&#47;&#x2f;&#x6c;&#x6f;&#99;&#x61;&#x6c;&#x68;&#111;&#x73;&#x74;&#x3a;&#x39;&#48;&#48;&#48;&#x2f;&#64;&#x74;&#101;&#115;&#116;&#x73;</a></li>
 </ul>
 <p>This will look like this initially:</p>
 <p><img src="img/01x.png" alt=""></p>
@@ -301,11 +321,11 @@ public class PlayerTest extends UnitTest
 <p>and they should be green. The tests are empty - but we have just verified that the test harness is functioning correctly.</p>
 <p>Also try the database interface:</p>
 <ul>
-<li><a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#104;&#116;&#116;&#112;&#x3a;&#47;&#47;&#x6c;&#x6f;&#x63;&#97;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x3a;&#57;&#x30;&#x30;&#48;&#47;&#x40;&#100;&#x62;">&#104;&#116;&#116;&#112;&#x3a;&#47;&#47;&#x6c;&#x6f;&#x63;&#97;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x3a;&#57;&#x30;&#x30;&#48;&#47;&#x40;&#100;&#x62;</a></li>
+<li><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#116;&#116;&#112;&#58;&#x2f;&#47;&#x6c;&#x6f;&#x63;&#x61;&#108;&#104;&#111;&#115;&#116;&#x3a;&#x39;&#48;&#48;&#x30;&#47;&#64;&#100;&#98;">&#x68;&#116;&#116;&#112;&#58;&#x2f;&#47;&#x6c;&#x6f;&#x63;&#x61;&#108;&#104;&#111;&#115;&#116;&#x3a;&#x39;&#48;&#48;&#x30;&#47;&#64;&#100;&#98;</a></li>
 </ul>
 </li>
-      
-        <li> <h1>Initial Tests for Player and Club</h1>
+        
+          <li> <h1>Initial Tests for Player and Club</h1>
 <h2>PlayerTest</h2>
 <p>In PlayerTest introduce a fixture and create some test objects:</p>
 <pre><code class="lang-java">public class PlayerTest extends UnitTest 
@@ -336,7 +356,7 @@ public class PlayerTest extends UnitTest
   { 
   }
 }</code></pre>
-<p>Run the tests - and have a look at the database admin interface (<a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#104;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x6c;&#x6f;&#99;&#97;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x3a;&#x39;&#x30;&#48;&#x30;&#47;&#x40;&#100;&#98;">&#104;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x6c;&#x6f;&#99;&#97;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x3a;&#x39;&#x30;&#48;&#x30;&#47;&#x40;&#100;&#98;</a>). Can you see any player objects? No because teardown() is deleteing all of the objects. Comment out the @After annotation:</p>
+<p>Run the tests - and have a look at the database admin interface (<a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#104;&#x74;&#x74;&#112;&#x3a;&#x2f;&#x2f;&#108;&#111;&#99;&#97;&#x6c;&#104;&#x6f;&#x73;&#116;&#58;&#57;&#x30;&#x30;&#48;&#x2f;&#x40;&#x64;&#98;">&#104;&#x74;&#x74;&#112;&#x3a;&#x2f;&#x2f;&#108;&#111;&#99;&#97;&#x6c;&#104;&#x6f;&#x73;&#116;&#58;&#57;&#x30;&#x30;&#48;&#x2f;&#x40;&#x64;&#98;</a>). Can you see any player objects? No because teardown() is deleteing all of the objects. Comment out the @After annotation:</p>
 <pre><code class="lang-java"> //@After</code></pre>
 <p>and run the tests again. This time - if you refresh the database page - you will see the three player objects.  Being able to see them in the database interface can be particularly useful if you are introducing new relationships between objects.</p>
 <p>Now we will bring in  utility function into the Player class:</p>
@@ -427,8 +447,8 @@ public class ClubTest extends UnitTest
 }</code></pre>
 <p>These tests should run successfully. Experiment with commenting out the @After annotation and seeing the actual objects in the database.</p>
 </li>
-      
-        <li> <h1>Modeling a Player / Club Relationship</h1>
+        
+          <li> <h1>Modeling a Player / Club Relationship</h1>
 <p>Currently there is no relationship between player and club - which can be modeled like this:</p>
 <p><img src="img/14.png" alt=""></p>
 <p>We can now implement this relationship. Modify the Club class as follows:</p>
@@ -525,8 +545,8 @@ public class Club extends Model
 <p>Read and absorb the logic of this test. As an experiment, comment out the final line (deleting mike). Then look to the database interface and note that mike is still in the database after the test have run. </p>
 <p>Note also that if we leave the deletion of mike commented out, and re-run the tests - then other tests start to fail. The only cure now will be to restart the application.</p>
 </li>
-      
-        <li> <h2>Bidirectional Club / Player Relationship</h2>
+        
+          <li> <h2>Bidirectional Club / Player Relationship</h2>
 <p>We might like each player to also &#39;know&#39; which club he/she belongs to. In fact this is probably a more natural relationship for these model elements:</p>
 <p><img src="img/17.png" alt=""></p>
 <p>Contrast this with the earlier version:</p>
@@ -559,8 +579,8 @@ import javax.persistence.ManyToOne;
   }</code></pre>
 <p>Whenever you change the model you should restart the application. Do this now and make sure this passes.</p>
 </li>
-      
-        <li> <h1>Division + Sponsor</h1>
+        
+          <li> <h1>Division + Sponsor</h1>
 <p>We would now like to extend the model to include the following extra classes:</p>
 <p><img src="img/19.png" alt=""></p>
 <p>These are the new classes for Division &amp; Sponsor:</p>
@@ -667,8 +687,8 @@ public class Sponsor extends Model
     sponsors.add(company);  
   }</code></pre>
 </li>
-      
-        <li> <h1>Tests</h1>
+        
+          <li> <h1>Tests</h1>
 <p>We can significantly simplify aspects of the testing if we invest some time in setting up test objects in yaml first.</p>
 <p>Create a &#39;data.yml&#39; file in &#39;conf&#39; and populate as follows:</p>
 <pre><code>Sponsor(pub):
@@ -878,8 +898,8 @@ public class ComprehensiveTest extends UnitTest
 }</code></pre>
 <p>Run the app in test mode, and run this new test suite. All of these tests should run.</p>
 </li>
-      
-        <li> <h1>Controllers/View</h1>
+        
+          <li> <h1>Controllers/View</h1>
 <p>Incorporate all of these controllers so we can interact with the model via the UI:</p>
 <h2>Players</h2>
 <pre><code class="lang-java">package controllers;
@@ -1084,8 +1104,8 @@ public class Division extends Controller
   &lt;/table&gt;
 &lt;/section&gt;</code></pre>
 </li>
-      
-        <li> <h1>Routes + Test Data</h1>
+        
+          <li> <h1>Routes + Test Data</h1>
 <p>Before we can start the app in normal mode, we will need to make sure this line is uncommented in the <code>application.conf</code> file:</p>
 <pre><code>db.default=mem</code></pre>
 <p>Now incorporate the following routes:</p>
@@ -1123,8 +1143,8 @@ public class Bootstrap extends Job
 }</code></pre>
 <p>Run the app again, and you should start to see some data.</p>
 </li>
-      
-        <li> <h1>Showing Division/Club/Player Relationships</h1>
+        
+          <li> <h1>Showing Division/Club/Player Relationships</h1>
 <p>Currently UI for the model if read only - and we can only see each model in isolation (we cant see relationships).</p>
 <p>First, we tackle the relationships. Update the <code>&lt;table&gt;</code> element of the following views with this version:</p>
 <h2>views/Players/index.html</h2>
@@ -1213,8 +1233,8 @@ public class Bootstrap extends Job
 &lt;/section&gt;</code></pre>
 <p>See if you can make sense of the above templates. Save everything and reload. You should be able to see what players belong to which clubs, and also what divisions the clubs are in.</p>
 </li>
-      
-        <li> <h1>Delete Player Feature</h1>
+        
+          <li> <h1>Delete Player Feature</h1>
 <p>Introduce the following method into the controllers/Players:</p>
 <pre><code class="lang-java">  public static void delete(Long id)
   {
@@ -1249,14 +1269,32 @@ public class Bootstrap extends Job
 <pre><code>GET    /players/delete/{id}                     Players.delete</code></pre>
 <p>And try again. You should be able to delete players.</p>
 </li>
-      
-        <li> <p>Solution </p>
+        
+          <li> <p>Solution </p>
 <h2>Repository so far:</h2>
 <ul>
 <li><a href="https://github.com/wit-ict-summer-school-2017/jpamodel/releases/tag/V11">https://github.com/wit-ict-summer-school-2017/jpamodel/releases/tag/V11</a></li>
 </ul>
 </li>
-      
-    </ul>
-  </div>
-</body>
+        
+      </ul>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass('');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertAfter($images[i]);
+      $('<br>').insertAfter($images[i]);
+    }
+  });
+});
+
+    </script>
+  </body>
+</html>
