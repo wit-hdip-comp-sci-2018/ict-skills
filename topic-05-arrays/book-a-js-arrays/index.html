@@ -1,23 +1,27 @@
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"/>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <style>
     
 
@@ -63,130 +67,112 @@ h3 {
 
 
   </style>
+</head>
 
-  <body class="lab">
+<body>
 
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
     
-  <div class="uk-offcanvas-content">
-    <div id="offcanvas-usage" uk-offcanvas>
-      <div class="uk-offcanvas-bar">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <ul class="uk-nav">
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-a-glitch-intro/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-1 Glitch Intro
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-b-js-introduction/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-2 JS Intro
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-3 Playlist 1
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-4 Playlist 2
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-04-app-models/book-a-gomix-playlist-3/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-5 Playlist 3
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-05-arrays/book-a-js-arrays/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-6 JS Arrays
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-06-sessions/book-b-gomix-sessions/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-7 Playlist 4
-                </a>
-              </li>
-            
-          
-        </ul>
-      </div>
-    </div>
+      <a href="../index.html"> 5: JS: Arrays  </a>
+    
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Lab-6 JS Arrays">
+        Lab-6 JS Arrays
+      </a>
+    
+      <a class="item" data-tab="01">
+        01
+      </a>
+    
+      <a class="item" data-tab="02">
+        02
+      </a>
+    
+      <a class="item" data-tab="03">
+        03
+      </a>
+    
+      <a class="item" data-tab="04">
+        04
+      </a>
+    
+      <a class="item" data-tab="05">
+        05
+      </a>
+    
+      <a class="item" data-tab="06">
+        06
+      </a>
+    
+      <a class="item" data-tab=".">
+        .
+      </a>
+    
+      <a class="item" data-tab=".">
+        .
+      </a>
+    
   </div>
+</div>
 
-
-    <div uk-sticky>
-      <nav class="uk-navbar">
-        <div class="uk-navbar-left">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
-            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
-                   uk-tooltip></a></li>
-            <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
-                                     pos="bottom" uk-tooltip>5: JS: Arrays </a></li>
-          </ul>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
-              uk-switcher="connect: .switcher-container">
-            
-              <li><a href="#">Lab-6 JS Arrays</a></li>
-            
-              <li><a href="#">01</a></li>
-            
-              <li><a href="#">02</a></li>
-            
-              <li><a href="#">03</a></li>
-            
-              <li><a href="#">04</a></li>
-            
-              <li><a href="#">05</a></li>
-            
-              <li><a href="#">06</a></li>
-            
-              <li><a href="#">.</a></li>
-            
-              <li><a href="#">.</a></li>
-            
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="uk-container uk-container-expand">
-      <ul class="uk-switcher switcher-container">
-        
-          <li> <h1>Objectives</h1>
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-a-glitch-intro/index.html">Lab-1 Glitch Intro </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-b-js-introduction/index.html">Lab-2 JS Intro </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">Lab-3 Playlist 1 </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">Lab-4 Playlist 2 </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-04-app-models/book-a-gomix-playlist-3/index.html">Lab-5 Playlist 3 </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-05-arrays/book-a-js-arrays/index.html">Lab-6 JS Arrays </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-06-sessions/book-b-gomix-sessions/index.html">Lab-7 Playlist 4 </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Lab-6 JS Arrays">
+          <h1>Objectives</h1>
 <p> Array Basics, Array Methods &amp; Iteration</p>
-</li>
-        
-          <li> <h1>Array Basics</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="01">
+          <h1>Array Basics</h1>
 <h2>Introduction</h2>
 <p>So far, we&#39;ve seen five different primitive data types in JavaScript: <code>string</code>, <code>number</code>, <code>boolean</code>, <code>null</code>, and <code>undefined</code>. We&#39;ve also seen how to store these values inside of variables.</p>
 <p>Sometimes, however, you need a more complex data structure when building your application. For example, maybe you need a list of restaurant names so that you can display each one to a user when she&#39;s looking for a place to eat nearby. Or maybe you&#39;re doing some math and want to maintain a list of prime numbers. It would be pretty annoying to have to write</p>
@@ -287,9 +273,11 @@ console.log(arr10); // [5, undefined, 3, 2]</code></pre>
 </ul>
 <h2>Exercise 2</h2>
 <p>What happens when you try to <code>pop</code> from an empty array? Create an empty array and see how chrome responds to this.</p>
-</li>
-        
-          <li> <h1>Array Methods</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="02">
+          <h1>Array Methods</h1>
 <p>So far, we&#39;ve seen how to access, update, add and remove items from an array. We&#39;ve also encountered some common array methods, including <code>push</code>, <code>pop</code>, <code>shift</code>, <code>unshift</code>, and <code>splice</code>. But these aren&#39;t the only methods you&#39;re likely to encounter when working with arrays. Let&#39;s take a look at a few more.</p>
 <h2>Common array functions and properties</h2>
 <h3>length</h3>
@@ -403,9 +391,11 @@ console.log(arr26.lastIndexOf(10)); // -1 - still returns -1 if the value is not
 <li>Create a new array <code>modernProgramming</code>, which combines <code>programming</code> with the array <code>[&#39;Haskell&#39;, &#39;Clojure&#39;]</code>.</li>
 <li>Return the string <code>&#39;JavaScript, Python, Ruby, Java&#39;</code> by using <code>join</code> on the <code>programming</code> array.</li>
 </ul>
-</li>
-        
-          <li> <h1>Array Iteration: for</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="03">
+          <h1>Array Iteration: for</h1>
 <p>Very often, you&#39;ll want to access each element of an array in order and do something with each element. For example, maybe you have an array of tweets, and you want to show each one on the page. Or maybe you have a list of numbers that you want to apply some mathematical operation to.</p>
 <p>For instance, suppose you have an array of numbers that you want to round to the nearest whole number:</p>
 <pre><code>const decimals = [1.1, 1.6, 2.8, 0.4, 3.5, 1.6];</code></pre>
@@ -493,9 +483,11 @@ for (let t = 0; t &lt; name.length; t++) {
 <li>Write the code to add &quot;Matt&quot; to the front of the array.</li>
 <li>Write the code to add your name to the end of the array.</li>
 </ul>
-</li>
-        
-          <li> <h1>Array Iteration: While loops</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="04">
+          <h1>Array Iteration: While loops</h1>
 <p>Along with <code>for</code> loops, we can also use a <code>while</code> loop. Unlike <code>for</code> loops, <code>while</code> loops only take a <code>condition</code>. This means that you need to handle initialization before the loop, and incrementing/decrementing yourself inside of the loop. If you forget to increment/decrement inside the loop, the loop will never terminate! Instead, you&#39;ll be stuck in what&#39;s called an <em>infinite loop</em>!</p>
 <p>Here&#39;s an example of a working <code>while</code> loop:</p>
 <pre><code>let i = 0;
@@ -588,9 +580,11 @@ do {
 <li>Write the code that gives the index of where &quot;Mary&quot; is located.</li>
 <li>Write the code that gives the index of where &quot;Foo&quot; is located (this should return <code>-1</code>).</li>
 </ul>
-</li>
-        
-          <li> <h1>Arrays of Objects</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="05">
+          <h1>Arrays of Objects</h1>
 <p>Create a file called <code>arrays3.js</code> declare this array:</p>
 <pre><code>const songsList = [
   &#39;Piano Sonata No. 3&#39;,
@@ -687,9 +681,11 @@ const songList3 = [
 <p>Output the total number of songs when all song details have been printed out.</p>
 <h2>Exercise 3:</h2>
 <p>Along with the total number of songs, see if you can also print out the total duration. This should be a simple total of the duration of all individual songs.</p>
-</li>
-        
-          <li> <h1>Nested Arrays</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="06">
+          <h1>Nested Arrays</h1>
 <p>Here is a more complex datastructure, representing multiple playlists:</p>
 <pre><code class="lang-js">const playlistCollection = [
   {
@@ -798,9 +794,11 @@ const songList3 = [
     console.log(playlistCollection[i].songs[j].artist);
   }
 }</code></pre>
-</li>
-        
-          <li> <h1>Array Additional Topic</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab=".">
+          <h1>Array Additional Topic</h1>
 <h2>Removing/Adding or both with splice</h2>
 <p>One of the more powerful array methods is <code>splice</code>, which allows you to either add to an array or remove elements or even do both! You can think of <code>splice</code> as a powerful generalization of <code>push</code>, <code>pop</code>, <code>unshift</code>, and <code>shift</code> all in one!</p>
 <p>The splice method accepts at least two arguments. The first argument is the starting index, indicating where values will be removed or added. The second parameter is the number of values to remove. Optionally, you can pass in an unlimited number of additional arguments; these correspond to values you&#39;d like to add to the array. The splice method always returns an array of the <strong>removed</strong> elements. Here are some examples:</p>
@@ -866,9 +864,11 @@ name[0] = &quot;m&quot;;
 name; // &quot;Matt&quot;, not &quot;matt&quot;!</code></pre>
 <p>This distinction between arrays and strings highlights a concept called <em>mutability</em>. We say that arrays in JavaScript are mutable, since you can change any element inside of them via a simple reassignment. However, strings are <em>immutable</em>, as you cannot change the characters within them in the same way that you do with arrays. In fact, any operation which changes characters in a string actually produces a new string, rather than mutating the original string.</p>
 <p>For more on mutability in JavaScript, you may want to check out <a href="https://www.sitepoint.com/immutability-javascript/">this</a> article. Note: the article makes use of functions in JavaScript, so it may be best to read it after finishing the functions unit in this course.</p>
-</li>
-        
-          <li> <h1>JS Array Exercise Solutions</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab=".">
+          <h1>JS Array Exercise Solutions</h1>
 <pre><code class="lang-js">var people = [&quot;Greg&quot;, &quot;Mary&quot;, &quot;Devon&quot;, &quot;James&quot;];
 
 // 1
@@ -923,26 +923,67 @@ people.splice(2,1,&quot;Elizabeth&quot;, &quot;Artie&quot;);
 // 11
 
 var withBob = people.concat(&quot;Bob&quot;);</code></pre>
-</li>
-        
-      </ul>
-    </div>
 
-    <script>
-      $(document).ready(function() {
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+  $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
   const $images = $('.lab img');
   jQuery.each($images, function(i) {
     if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
+      $(divLabel).insertBefore($images[i]);
     }
   });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>

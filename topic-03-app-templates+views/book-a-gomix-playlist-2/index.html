@@ -1,23 +1,27 @@
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"/>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <style>
     
 
@@ -63,130 +67,112 @@ h3 {
 
 
   </style>
+</head>
 
-  <body class="lab">
+<body>
 
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
     
-  <div class="uk-offcanvas-content">
-    <div id="offcanvas-usage" uk-offcanvas>
-      <div class="uk-offcanvas-bar">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <ul class="uk-nav">
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-a-glitch-intro/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-1 Glitch Intro
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-b-js-introduction/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-2 JS Intro
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-3 Playlist 1
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-4 Playlist 2
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-04-app-models/book-a-gomix-playlist-3/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-5 Playlist 3
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-05-arrays/book-a-js-arrays/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-6 JS Arrays
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-06-sessions/book-b-gomix-sessions/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-7 Playlist 4
-                </a>
-              </li>
-            
-          
-        </ul>
-      </div>
-    </div>
+      <a href="../index.html"> 3: Templates & Routes  </a>
+    
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Lab-4 Playlist 2">
+        Lab-4 Playlist 2
+      </a>
+    
+      <a class="item" data-tab="Exercise Solutions">
+        Exercise Solutions
+      </a>
+    
+      <a class="item" data-tab="01">
+        01
+      </a>
+    
+      <a class="item" data-tab="02">
+        02
+      </a>
+    
+      <a class="item" data-tab="03">
+        03
+      </a>
+    
+      <a class="item" data-tab="04">
+        04
+      </a>
+    
+      <a class="item" data-tab="05">
+        05
+      </a>
+    
+      <a class="item" data-tab="07">
+        07
+      </a>
+    
+      <a class="item" data-tab="Exercises">
+        Exercises
+      </a>
+    
   </div>
+</div>
 
-
-    <div uk-sticky>
-      <nav class="uk-navbar">
-        <div class="uk-navbar-left">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
-            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
-                   uk-tooltip></a></li>
-            <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
-                                     pos="bottom" uk-tooltip>3: Templates & Routes </a></li>
-          </ul>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
-              uk-switcher="connect: .switcher-container">
-            
-              <li><a href="#">Lab-4 Playlist 2</a></li>
-            
-              <li><a href="#">Exercise Solutions</a></li>
-            
-              <li><a href="#">01</a></li>
-            
-              <li><a href="#">02</a></li>
-            
-              <li><a href="#">03</a></li>
-            
-              <li><a href="#">04</a></li>
-            
-              <li><a href="#">05</a></li>
-            
-              <li><a href="#">07</a></li>
-            
-              <li><a href="#">Exercises</a></li>
-            
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="uk-container uk-container-expand">
-      <ul class="uk-switcher switcher-container">
-        
-          <li> <h1>Objectives</h1>
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-a-glitch-intro/index.html">Lab-1 Glitch Intro </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-b-js-introduction/index.html">Lab-2 JS Intro </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">Lab-3 Playlist 1 </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">Lab-4 Playlist 2 </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-04-app-models/book-a-gomix-playlist-3/index.html">Lab-5 Playlist 3 </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-05-arrays/book-a-js-arrays/index.html">Lab-6 JS Arrays </a>
+      
+    
+      
+        <a class="item"
+           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-06-sessions/book-b-gomix-sessions/index.html">Lab-7 Playlist 4 </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Lab-4 Playlist 2">
+          <h1>Objectives</h1>
 <p>Refactor the dashboard controller to show summary on of the playlists + link to show playlist details.</p>
-</li>
-        
-          <li> <h1>Exercise Solutions</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Exercise Solutions">
+          <h1>Exercise Solutions</h1>
 <p>This lab requires that the <code>playlist-1</code> lab be completed. If you have lost your solution, create a new project in Gomix and select the <code>import from github</code> option and enter <code>wit-hdip-comp-sci-2018/playlist-1</code> to import a completed version.</p>
 <h2>Exercise 2: Add a new playlist</h2>
 <p>Extend the JSON file to include an additional playlist - so that three playlists are displayed on the dashboard.</p>
@@ -317,9 +303,11 @@ Lab-7 Playlist 4
     &lt;/table&gt;
   &lt;/section&gt;
 {{/each}}</code></pre>
-</li>
-        
-          <li> <h1>Playlist Summaries</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="01">
+          <h1>Playlist Summaries</h1>
 <p>We would like to change the app to just display a list of playlists on the dashboard, not the complete contents of each playlist. Replace the current dashboard with the following:</p>
 <h2>views/dashboard.hbs</h2>
 <pre><code class="lang-html">{{&gt; menu id=&quot;dashboard&quot;}}
@@ -343,9 +331,11 @@ Lab-7 Playlist 4
 <p>Hover over each link and note how the ID changes. Clicking on any link causes the following error:</p>
 <pre><code>Cannot GET /playlist/02</code></pre>
 <p>We need a new controller to display a new view containing the playlist details. We will do this in the next step.</p>
-</li>
-        
-          <li> <h1>Router + Controller</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="02">
+          <h1>Router + Controller</h1>
 <p>The starting point for any new link in our app is to first define a <code>route</code> to support this link. All supported routes are defined in <code>routes.js</code></p>
 <p>This is the current version:</p>
 <h2>routes.js</h2>
@@ -382,9 +372,11 @@ router.get(&#39;/about&#39;, about.index);</code></pre>
   },
 };</code></pre>
 <p>Make sure you understand this connection before proceeding. Try changing the spelling of the index method for instance - and see what happens (make sure to change it back!).</p>
-</li>
-        
-          <li> <h1>Controller/View/Route</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="03">
+          <h1>Controller/View/Route</h1>
 <p>Bringing in a new controller usually requires three things:</p>
 <ul>
 <li>a controller</li>
@@ -426,9 +418,11 @@ const playlist = require(&#39;./controllers/playlist.js&#39;);
 <pre><code class="lang-js">router.get(&#39;/playlist/:id&#39;, playlist.index);</code></pre>
 <p>Notice that the route includes this segment: <code>/:id</code>. This means it matches any route that includes an extra wildcard segment at the end.</p>
 <p>Implement all of the above now and verify that the view is rendered as expected.</p>
-</li>
-        
-          <li> <h1>Playlists</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="04">
+          <h1>Playlists</h1>
 <p>In order to display the correct playlist, we need to extract the id from the url. Modify the playlist controller as follows:</p>
 <pre><code class="lang-js">  index(request, response) {
     const playlistId = request.params.id;
@@ -528,9 +522,11 @@ module.exports = playlist;</code></pre>
   {{&gt; listsongs}}
 &lt;/section&gt;</code></pre>
 <p>The app should now run as expected, with playlist summaries on the dashboard, and a view link rendering the playlists details.</p>
-</li>
-        
-          <li> <h1>Deleting Songs : Part 1</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="05">
+          <h1>Deleting Songs : Part 1</h1>
 <p>Having a playlist app, without the ability to create/delete songs or playlists is clearly very limited. We have, essentially, an app that allows us to <code>Read</code> our models, but not <code>Create</code>, <code>Update</code> or <code>Delete</code> elements of the model.</p>
 <p>We can start with providing a facility to delete songs from individual playlists. Our view will need to look like this:</p>
 <p><img src="img/03.png" alt=""></p>
@@ -573,9 +569,11 @@ module.exports = playlist;</code></pre>
   },</code></pre>
 <p>Try all of this now - and verify that the logs shows the attempt to delete the song when the button is pressed.</p>
 <p>We havent yet deleted the song - we will leave that to the next step.</p>
-</li>
-        
-          <li> <h1>Deleting Songs : Part 2</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="07">
+          <h1>Deleting Songs : Part 2</h1>
 <p>There are many techniques for deleting an element from an array, which require more in depth Javascript knowledge. However, we have a simpler solution for the moment via the <code>lodash</code> library.</p>
 <p>At the top of our <code>playlist-store.js</code> module, import this library:</p>
 <h2>models/playlist-store.js</h2>
@@ -614,9 +612,11 @@ module.exports = playlist;</code></pre>
 <ul>
 <li><a href="http://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting">http://colintoh.com/blog/lodash-10-javascript-utility-functions-stop-rewriting</a></li>
 </ul>
-</li>
-        
-          <li> <h1>Exercises</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Exercises">
+          <h1>Exercises</h1>
 <p>If you want to download a complete version of the app as it should be at the end of this lab, then create a new Gomix project, and import <code>wit-hdip-comp-sci-2018/playlist-2</code>.</p>
 <h2>Exercise 1: UX Enhancements</h2>
 <p>Introduce a &#39;Delete Playlist&#39; button for each playlist, represented by a <code>trash</code> icon. E.g:</p>
@@ -657,26 +657,67 @@ module.exports = playlist;</code></pre>
 <p>This requires you to write a new partial called <code>listplaylists</code>.</p>
 <p>Here is how the dashboard should look when complete:</p>
 <p><img src="img/05.png" alt=""></p>
-</li>
-        
-      </ul>
-    </div>
 
-    <script>
-      $(document).ready(function() {
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+  $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
   const $images = $('.lab img');
   jQuery.each($images, function(i) {
     if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
+      $(divLabel).insertBefore($images[i]);
     }
   });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>
