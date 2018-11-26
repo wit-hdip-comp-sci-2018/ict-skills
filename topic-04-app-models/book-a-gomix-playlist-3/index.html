@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
-        type="text/css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
-        rel="stylesheet"/>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <style>
-    
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+          type="text/css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+          rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
 body {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
@@ -66,105 +66,133 @@ h3 {
 
 
 
-  </style>
-</head>
+      
 
-<body>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  background: white;
+  text-align: right;
+}
+.content {
+  flex: 1;
+  overflow: auto;
+}
 
 
 
-<div class="ui fixed top pointing inverted stackable menu labmenu">
-  <header class="header item">
-    <i id="toc" class="sitemap icon"></i>
-    
-      <a href="../index.html"> 4: Model View Controller  </a>
-    
-  </header>
-  <div class="right tab-menu menu">
-    
-      <a class="item" data-tab="Lab-5 Playlist 3">
-        Lab-5 Playlist 3
-      </a>
-    
-      <a class="item" data-tab="Exercise Solutions">
-        Exercise Solutions
-      </a>
-    
-      <a class="item" data-tab="01">
-        01
-      </a>
-    
-      <a class="item" data-tab="02">
-        02
-      </a>
-    
-      <a class="item" data-tab="03">
-        03
-      </a>
-    
-      <a class="item" data-tab="04">
-        04
-      </a>
-    
-      <a class="item" data-tab="Exercises">
-        Exercises
-      </a>
-    
+    </style>
+  </head>
+
+  <body class="uk-background-muted">
+    <div class="wrapper">
+      <div class="content">
+        <div style="height:1000px;">
+          
+  
+
+  <div class="ui fixed top pointing inverted stackable menu labmenu">
+    <header class="header item">
+      <i id="toc" class="sitemap icon"></i>
+      
+        <a href="../index.html"> 4: Model View Controller  </a>
+      
+    </header>
+    <div class="right tab-menu menu">
+      
+        <a class="item" data-tab="Lab-5 Playlist 3">
+          Lab-5 Playlist 3
+        </a>
+      
+        <a class="item" data-tab="Exercise Solutions">
+          Exercise Solutions
+        </a>
+      
+        <a class="item" data-tab="01">
+          01
+        </a>
+      
+        <a class="item" data-tab="02">
+          02
+        </a>
+      
+        <a class="item" data-tab="03">
+          03
+        </a>
+      
+        <a class="item" data-tab="04">
+          04
+        </a>
+      
+        <a class="item" data-tab="Exercises">
+          Exercises
+        </a>
+      
+    </div>
   </div>
-</div>
 
-<div class="ui pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <br><br>
-    
+
+  
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <br><br>
       
-        <a class="item"
-           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-a-glitch-intro/index.html">Lab-1 Glitch Intro </a>
+        
+          <a class="item"
+             href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-a-glitch-intro/index.html">Lab-1 Glitch Intro </a>
+        
       
-    
+        
+          <a class="item"
+             href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-b-js-introduction/index.html">Lab-2 JS Intro </a>
+        
       
-        <a class="item"
-           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-01-intro/book-b-js-introduction/index.html">Lab-2 JS Intro </a>
+        
+          <a class="item"
+             href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">Lab-3 Playlist 1 </a>
+        
       
-    
+        
+          <a class="item"
+             href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">Lab-4 Playlist 2 </a>
+        
       
-        <a class="item"
-           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-02-controllers-and-views/book-a-gomix-playlist-1/index.html">Lab-3 Playlist 1 </a>
+        
+          <a class="item"
+             href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-04-app-models/book-a-gomix-playlist-3/index.html">Lab-5 Playlist 3 </a>
+        
       
-    
+        
+          <a class="item"
+             href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-05-arrays/book-a-js-arrays/index.html">Lab-6 JS Arrays </a>
+        
       
-        <a class="item"
-           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-03-app-templates+views/book-a-gomix-playlist-2/index.html">Lab-4 Playlist 2 </a>
+        
+          <a class="item"
+             href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-06-sessions/book-b-gomix-sessions/index.html">Lab-7 Playlist 4 </a>
+        
       
-    
-      
-        <a class="item"
-           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-04-app-models/book-a-gomix-playlist-3/index.html">Lab-5 Playlist 3 </a>
-      
-    
-      
-        <a class="item"
-           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-05-arrays/book-a-js-arrays/index.html">Lab-6 JS Arrays </a>
-      
-    
-      
-        <a class="item"
-           href="http://wit-hdip-comp-sci-2018.github.io/ict-skills//topic-06-sessions/book-b-gomix-sessions/index.html">Lab-7 Playlist 4 </a>
-      
-    
-  </div>
-  <div class="pusher" tabindex="-1">
-    <div class="ui basic segment">
-      <br>
-      
-        <div class="ui tab segment lab" data-tab="Lab-5 Playlist 3">
-          <h1>Objectives</h1>
+    </div>
+    <div class="pusher" tabindex="-1">
+      <div class="ui basic segment">
+        <br>
+        
+          <div class="ui tab segment lab" data-tab="Lab-5 Playlist 3">
+            <h1>Objectives</h1>
 <p>Enable Songs and Playlists to be added via simple forms.</p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="Exercise Solutions">
-          <h1>Exercise Solutions</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="Exercise Solutions">
+            <h1>Exercise Solutions</h1>
 <p>This lab requires that the <code>playlist-2</code> lab be completed. If you have lost your solution, create a new project in Gomix and select the <code>import from github</code> option and enter <code>wit-hdip-comp-sci-2018/playlist-2</code> to import a completed version.</p>
 <h2>Exercise 1: UX Enhancements &amp; Exercise 3: listplaylists partial</h2>
 <p>Introduce a &#39;Delete Playlist&#39; button for each playlist, represented by a <code>trash</code> icon.</p>
@@ -209,10 +237,10 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
     _.remove(this.playlistCollection, { id: id });
   },</code></pre>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="01">
-          <h1>Adding a Song</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="01">
+            <h1>Adding a Song</h1>
 <p>Before adding a song, lets align the delete button appearance with the delete playlist. Use this icon button instead of the existing one:</p>
 <pre><code class="lang-html">&lt;a href=&quot;/playlist/{{../playlist.id}}/deletesong/{{id}}&quot; class=&quot;ui icon button&quot;&gt;
   &lt;i class=&quot;icon trash&quot;&gt;&lt;/i&gt;
@@ -271,10 +299,10 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
 <p>Try this now and verify that you can add songs.</p>
 <p>Can you delete one of the songs you have just added? Can you delete one of the songs that have been in there already? Can you explain what is going wrong?</p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="02">
-          <h1>ID Management</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="02">
+            <h1>ID Management</h1>
 <p>Deleting a song you have manually added using the form generates the following:</p>
 <pre><code>Cannot GET /playlist/02/deletesong/</code></pre>
 <p>However, pre-populated songs can still be deleted. What is going on here?</p>
@@ -321,10 +349,10 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
     logger.debug(&#39;New Song = &#39;, newSong);
 ...</code></pre>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="03">
-          <h1>Adding playlists</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="03">
+            <h1>Adding playlists</h1>
 <p>Modeled on the Song addition, we can quickly implement the necessary form, route, controller function and model update to support adding a new playlist.</p>
 <h2>views/partials/addplaylist.hbs</h2>
 <pre><code class="lang-html">&lt;form class=&quot;ui stacked segment form&quot; action=&quot;/dashboard/addplaylist&quot; method=&quot;POST&quot;&gt;
@@ -362,10 +390,10 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
 },</code></pre>
 <p>We should now be able to add new playlists.</p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="04">
-          <h1>Persistence</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="04">
+            <h1>Persistence</h1>
 <p>You will note that, even though we are able to add/delete playlists/songs, every time the app restarts then we are left with the same initial playlist. i.e. none of the changes we make are <code>persisted</code> beyond the life of the program execution.</p>
 <p>This is the field of databases - and beyond the scope of this course for the moment. However, we can implement something like a database, but simpler, which can serve our needs. Introduce this new class into the project:</p>
 <h2>models/json-store.js</h2>
@@ -477,10 +505,10 @@ module.exports = playlistStore;</code></pre>
 <p>Try this now - and keep an eye on the <code>playlist-store.json</code> file. Because of the way Glitch works, you may only see the updated json when you refresh the page. </p>
 <p>To see this in action - add a new Playlist in the UX. In Glitch, see if there is any change for playlist-store.json. If there is not, reload the Glitch site, and we should expect to see the new playlist in the reloaded json file.</p>
 
-        </div>
-      
-        <div class="ui tab segment lab" data-tab="Exercises">
-          <h1>Exercises</h1>
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="Exercises">
+            <h1>Exercises</h1>
 <p>If you want to download a complete version of the app as it should be at the end of this lab, then create a new Glitch project, and import <code>wit-hdip-comp-sci-2018/playlist-3</code>.</p>
 <h2>Exercise 1: Display Durations</h2>
 <p>Make sure the duration of each song and playlist is visible on the UX</p>
@@ -517,14 +545,16 @@ module.exports = playlistStore;</code></pre>
     this.store.save();
   },</code></pre>
 
-        </div>
-      
+          </div>
+        
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  $(document).on('keydown', function(e) {
+
+
+  <script>
+    $(document).on('keydown', function(e) {
   e = e || window.event;
   var nextTab;
   switch (e.which || e.keyCode) {
@@ -544,7 +574,7 @@ module.exports = playlistStore;</code></pre>
   }
 });
 
-  $(document).ready(function() {
+    $(document).ready(function() {
   $('img').addClass('ui image');
 
   $('.ui.embed').embed();
@@ -577,6 +607,16 @@ module.exports = playlistStore;</code></pre>
     .sidebar('attach events', '#toc');
 });
 
-</script>
-</body>
+  </script>
+
+
+        </div>
+      </div>
+      <div class="footer"> <p> Powered by <a
+          href="https://github.com/edeleastar/tutors-ts">tutors-ts.</a>
+        Unless otherwise stated, this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </p>
+      </div>
+    </div>
+  </body>
+
 </html>
